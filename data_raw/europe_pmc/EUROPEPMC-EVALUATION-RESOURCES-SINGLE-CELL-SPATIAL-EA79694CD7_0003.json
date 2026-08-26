@@ -1,0 +1,17 @@
+{
+  "version": "6.9",
+  "hitCount": 1272,
+  "nextCursorMark": "AoIIP0ps/Sg0NTgxMDA1OA==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=((\"agentic bioinformatics\" OR \"bioinformatics agent\" OR \"biological AI agent\" OR \"biomedical AI agent\" OR \"LLM agent\" OR \"large language model agent\" OR \"multi-agent system\" OR \"autonomous agent\" OR \"AI scientist\" OR \"scientific discovery agent\" OR \"tool-using agent\" OR \"tool-augmented LLM\") AND (single-cell OR \"single cell\" OR \"spatial transcriptomics\" OR \"spatial omics\" OR \"spatial biology\") AND (benchmark OR evaluation OR workflow OR \"tool execution\" OR \"code execution\" OR planning OR orchestration OR \"workflow state\" OR repair OR debugging OR verification OR provenance OR replayability OR reproducibility OR robustness OR \"experimental validation\" OR \"prospective validation\" OR closed-loop)) AND FIRST_PDATE:[2022-01-01 TO 2026-07-31]&cursorMark=AoIIP0ps/Sg0NTgxMDA1OA==&resultType=core&synonym=true&pageSize=1000&format=json",
+  "request": {
+    "queryString": "((\"agentic bioinformatics\" OR \"bioinformatics agent\" OR \"biological AI agent\" OR \"biomedical AI agent\" OR \"LLM agent\" OR \"large language model agent\" OR \"multi-agent system\" OR \"autonomous agent\" OR \"AI scientist\" OR \"scientific discovery agent\" OR \"tool-using agent\" OR \"tool-augmented LLM\") AND (single-cell OR \"single cell\" OR \"spatial transcriptomics\" OR \"spatial omics\" OR \"spatial biology\") AND (benchmark OR evaluation OR workflow OR \"tool execution\" OR \"code execution\" OR planning OR orchestration OR \"workflow state\" OR repair OR debugging OR verification OR provenance OR replayability OR reproducibility OR robustness OR \"experimental validation\" OR \"prospective validation\" OR closed-loop)) AND FIRST_PDATE:[2022-01-01 TO 2026-07-31]",
+    "resultType": "core",
+    "cursorMark": "AoIIP0ps%2FSg0NTgxMDA1OA%3D%3D",
+    "pageSize": 1000,
+    "sort": "",
+    "synonym": true
+  },
+  "resultList": {
+    "result": []
+  }
+}

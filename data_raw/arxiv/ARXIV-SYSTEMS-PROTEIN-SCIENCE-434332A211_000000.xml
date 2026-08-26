@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/epuL36ff47UQOxGVs/uVfcbgQEQ</id>
+  <title>arXiv Query: search_query=(all:"agentic bioinformatics" OR all:"bioinformatics agent" OR all:"biological AI agent" OR all:"biomedical AI agent" OR all:"LLM agent" OR all:"large language model agent" OR all:"multi-agent system" OR all:"autonomous agent" OR all:"AI scientist" OR all:"scientific discovery agent" OR all:"tool-using agent" OR all:"tool-augmented LLM") AND (all:proteomics OR all:"protein design" OR all:"protein engineering" OR all:"structural biology")&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-08-26T21:15:33Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(all:%22agentic+bioinformatics%22+OR+(all:%22bioinformatics+agent%22+OR+(all:%22biological+AI+agent%22+OR+(all:%22biomedical+AI+agent%22+OR+(all:%22LLM+agent%22+OR+(all:%22large+language+model+agent%22+OR+(all:%22multi-agent+system%22+OR+(all:%22autonomous+agent%22+OR+(all:%22AI+scientist%22+OR+(all:%22scientific+discovery+agent%22+OR+(all:%22tool-using+agent%22+OR+all:%22tool-augmented+LLM%22)))))))))))+AND+(all:proteomics+OR+(all:%22protein+design%22+OR+(all:%22protein+engineering%22+OR+all:%22structural+biology%22)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>9</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.15766v1</id>
+    <title>BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks</title>
+    <updated>2026-05-15T09:24:55Z</updated>
+    <link href="https://arxiv.org/abs/2605.15766v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.15766v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents are increasingly capable of automating components of machine learning development, yet existing biomedical benchmarks mainly focus on question answering, reasoning, and tool usage, or evaluate only narrow aspects of biomedical ML coding. We present BioXArena, a biomedical machine learning benchmark designed to evaluate whether agents can generate task-specific model training pipelines for heterogeneous and multi-modal biomedical datasets. BioXArena contains 76 end-to-end tasks across 9 domains, including sequence modeling, single-cell analysis, structural biology, network biology, chemical biology, perturbation dynamics, phenotype-disease modeling, biomedical imaging, and text-integrated learning. Each task is curated from primary biomedical sources into a unified evaluation framework with hidden labels, held-out graders, and biology-aware metrics normalized to a 0 to 1 scale. Agents are required to write executable code, train predictive models, and generate submissions for private test samples. Most tasks involve multiple input modalities, including tabular data, images, natural language, molecular sequences, omics matrices, and protein structures. We evaluate 11 agent configurations in a standardized 2-hour single-GPU environment. MLEvolve with Gemini-3.1-Pro achieves the highest average score of 0.666, followed by GPT-5.4 with 0.636, while no single agent consistently dominates across all domains. We additionally perform extensive ablation studies, robustness evaluations, scaling analyses, cost analyses, and failure-mode investigations to better understand how model backbones, agent scaffolds, inference budgets, and biomedical domains influence BioML coding performance. We will publicly release all benchmark tasks, graders, execution runners, leaderboard results, and agent trajectories.</summary>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-15T09:24:55Z</published>
+    <arxiv:comment>69 pages, 13 figures, 34 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CE"/>
+    <author>
+      <name>Loka Li</name>
+    </author>
+    <author>
+      <name>Duzhen Zhang</name>
+    </author>
+    <author>
+      <name>Xingbo Du</name>
+    </author>
+    <author>
+      <name>Leonard Song</name>
+    </author>
+    <author>
+      <name>Zixiao Wang</name>
+    </author>
+    <author>
+      <name>Assanali Aukenov</name>
+    </author>
+    <author>
+      <name>Noel Thomas</name>
+    </author>
+    <author>
+      <name>Shakhnazar Sailaukan</name>
+    </author>
+    <author>
+      <name>Yonghan Yang</name>
+    </author>
+    <author>
+      <name>Feilong Chen</name>
+    </author>
+    <author>
+      <name>Jiahua Dong</name>
+    </author>
+    <author>
+      <name>Kun Zhang</name>
+    </author>
+    <author>
+      <name>Bin Zhang</name>
+    </author>
+    <author>
+      <name>Le Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.05758v1</id>
+    <title>BioTool: A Comprehensive Tool-Calling Dataset for Enhancing Biomedical Capabilities of Large Language Models</title>
+    <updated>2026-05-07T06:53:17Z</updated>
+    <link href="https://arxiv.org/abs/2605.05758v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.05758v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite the success of large language models (LLMs) on general-purpose tasks, their performance in highly specialized domains such as biomedicine remains unsatisfactory. A key limitation is the inability of LLMs to effectively leverage biomedical tools, which clinical experts and biomedical researchers rely on extensively in daily workflows. While recent general-domain tool-calling datasets have substantially improved the capabilities of LLM agents, existing efforts in the biomedical domain largely rely on in-context learning and restrict models to a small set of tools. To address this gap, we introduce BioTool, a comprehensive biomedical tool-calling dataset designed for fine-tuning LLMs. BioTool comprises 34 frequently used tools collected from the NCBI, Ensembl, and UniProt databases, along with 7,040 high-quality, human-verified query-API call pairs spanning variation, genomics, proteomics, evolution, and general biology. Fine-tuning a 4-billion-parameter LLM on BioTool yields substantial improvements in biomedical tool-calling performance, outperforming cutting-edge commercial LLMs such as GPT-5.1. Furthermore, human expert evaluations demonstrate that integrating a BioTool-fine-tuned tool caller significantly improves downstream answer quality compared to the same LLM without tool usage, highlighting the effectiveness of BioTool in enhancing the biomedical capabilities of LLMs. The full dataset and evaluation code are available at https://github.com/gxx27/BioTool</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-07T06:53:17Z</published>
+    <arxiv:comment>Published at ACL 2026; Code and data available at https://github.com/gxx27/BioTool</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xin Gao</name>
+    </author>
+    <author>
+      <name>Ruiyi Zhang</name>
+    </author>
+    <author>
+      <name>Meixi Du</name>
+    </author>
+    <author>
+      <name>Peijia Qin</name>
+    </author>
+    <author>
+      <name>Pengtao Xie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.15952v2</id>
+    <title>Protein Design with Agent Rosetta: A Case Study for Specialized Scientific Agents</title>
+    <updated>2026-06-15T12:51:11Z</updated>
+    <link href="https://arxiv.org/abs/2603.15952v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.15952v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are capable of emulating reasoning and using tools, creating opportunities for autonomous agents that execute complex scientific tasks. Protein design provides a natural testbed: although machine learning (ML) methods achieve strong results, these are largely restricted to canonical amino acids and narrow objectives, leaving unfilled need for a generalist tool for broad design pipelines. We introduce Agent Rosetta, an LLM agent paired with a structured environment for operating Rosetta, the leading physics-based heteropolymer design software, capable of modeling non-canonical building blocks and geometries. Agent Rosetta iteratively refines designs to achieve user-defined objectives, combining LLM reasoning with Rosetta's generality. We evaluate Agent Rosetta on design with canonical amino acids, matching specialized models and expert baselines, and with non-canonical residues -- where ML approaches fail -- achieving comparable performance. Critically, prompt engineering alone often fails to generate Rosetta actions, demonstrating that environment design is essential for integrating LLM agents with specialized software. Our results show that properly designed environments enable LLM agents to make scientific software accessible while matching specialized tools and human experts.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-16T22:06:03Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jacopo Teneggi</name>
+    </author>
+    <author>
+      <name>S. M. Bargeen A. Turzo</name>
+    </author>
+    <author>
+      <name>Tanya Marwah</name>
+    </author>
+    <author>
+      <name>Alberto Bietti</name>
+    </author>
+    <author>
+      <name>P. Douglas Renfrew</name>
+    </author>
+    <author>
+      <name>Vikram Khipple Mulligan</name>
+    </author>
+    <author>
+      <name>Siavash Golkar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.10161v3</id>
+    <title>Omics Data Discovery Agents: Agent-Supported Retrieval, Reanalysis, and Synthesis of Published Omics Data</title>
+    <updated>2026-07-22T22:15:14Z</updated>
+    <link href="https://arxiv.org/abs/2603.10161v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.10161v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The biomedical literature contains a vast collection of omics studies, yet most published data remain functionally inaccessible for computational reuse. When raw data are deposited in public repositories, essential information for reproducing reported results is dispersed across main text, supplementary files, and code repositories, and in the rarer cases where intermediate data (e.g. protein abundance files) are shared, their location is irregular. Here we present an agentic framework for the agent-supported retrieval, reanalysis, and synthesis of published omics data. The system employs large language model (LLM) agents with access to tools for fetching omics studies, extracting article metadata, identifying and downloading published data, executing containerized quantification pipelines, and synthesizing results across studies. Applied at corpus scale, the pipeline cataloged dataset references across thousands of PubMed Central articles; we report these as descriptive system outputs rather than as a validated measure of extraction accuracy. Using model context protocol (MCP) servers to expose containerized analysis tools, the agents retrieved and re-quantified data in five end-to-end reanalyses spanning data-dependent and data-independent proteomics and bulk RNA-seq. All five reanalyses completed, each with documented human guidance and workflow accommodations, and reproduced the authors' deposited abundances with high per-sample correlation (0.85-0.997) and strongly concordant differentially expressed features (fold-change Spearman 0.88-0.91), with no direction reversals among features called differentially expressed in both analyses; residual differences in significant-feature lists were attributable to threshold placement, tool-version, and preprocessing differences rather than to the underlying quantities.</summary>
+    <category term="q-bio.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-10T18:53:10Z</published>
+    <arxiv:primary_category term="q-bio.GN"/>
+    <author>
+      <name>Alexandre Hutton</name>
+    </author>
+    <author>
+      <name>Jesse G. Meyer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.10034v1</id>
+    <title>DynaMate: An Autonomous Agent for Protein-Ligand Molecular Dynamics Simulations</title>
+    <updated>2025-12-10T19:40:51Z</updated>
+    <link href="https://arxiv.org/abs/2512.10034v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.10034v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Force field-based molecular dynamics (MD) simulations are indispensable for probing the structure, dynamics, and functions of biomolecular systems, including proteins and protein-ligand complexes. Despite their broad utility in drug discovery and protein engineering, the technical complexity of MD setup, encompassing parameterization, input preparation, and software configuration, remains a major barrier for widespread and efficient usage. Agentic LLMs have demonstrated their capacity to autonomously execute multi-step scientific processes, and to date, they have not successfully been used to automate protein-ligand MD workflows. Here, we present DynaMate, a modular multi-agent framework that autonomously designs and executes complete MD workflows for both protein and protein-ligand systems, and offers free energy binding affinity calculations with the MM/PB(GB)SA method. The framework integrates dynamic tool use, web search, PaperQA, and a self-correcting behavior. DynaMate comprises three specialized modules, interacting to plan the experiment, perform the simulation, and analyze the results. We evaluated its performance across twelve benchmark systems of varying complexity, assessing success rate, efficiency, and adaptability. DynaMate reliably performed full MD simulations, corrected runtime errors through iterative reasoning, and produced meaningful analyses of protein-ligand interactions. This automated framework paves the way toward standardized, scalable, and time-efficient molecular modeling pipelines for future biomolecular and drug design applications.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-10T19:40:51Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Salomé Guilbert</name>
+    </author>
+    <author>
+      <name>Cassandra Masschelein</name>
+    </author>
+    <author>
+      <name>Jeremy Goumaz</name>
+    </author>
+    <author>
+      <name>Bohdan Naida</name>
+    </author>
+    <author>
+      <name>Philippe Schwaller</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.22311v1</id>
+    <title>Swarms of Large Language Model Agents for Protein Sequence Design with Experimental Validation</title>
+    <updated>2025-11-27T10:42:52Z</updated>
+    <link href="https://arxiv.org/abs/2511.22311v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.22311v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Designing proteins de novo with tailored structural, physicochemical, and functional properties remains a grand challenge in biotechnology, medicine, and materials science, due to the vastness of sequence space and the complex coupling between sequence, structure, and function. Current state-of-the-art generative methods, such as protein language models (PLMs) and diffusion-based architectures, often require extensive fine-tuning, task-specific data, or model reconfiguration to support objective-directed design, thereby limiting their flexibility and scalability. To overcome these limitations, we present a decentralized, agent-based framework inspired by swarm intelligence for de novo protein design. In this approach, multiple large language model (LLM) agents operate in parallel, each assigned to a specific residue position. These agents iteratively propose context-aware mutations by integrating design objectives, local neighborhood interactions, and memory and feedback from previous iterations. This position-wise, decentralized coordination enables emergent design of diverse, well-defined sequences without reliance on motif scaffolds or multiple sequence alignments, validated with experiments on proteins with alpha helix and coil structures. Through analyses of residue conservation, structure-based metrics, and sequence convergence and embeddings, we demonstrate that the framework exhibits emergent behaviors and effective navigation of the protein fitness landscape. Our method achieves efficient, objective-directed designs within a few GPU-hours and operates entirely without fine-tuning or specialized training, offering a generalizable and adaptable solution for protein design. Beyond proteins, the approach lays the groundwork for collective LLM-driven design across biomolecular systems and other scientific discovery tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.soft" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-27T10:42:52Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Fiona Y. Wang</name>
+    </author>
+    <author>
+      <name>Di Sheng Lee</name>
+    </author>
+    <author>
+      <name>David L. Kaplan</name>
+    </author>
+    <author>
+      <name>Markus J. Buehler</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.18213v1</id>
+    <title>A Study on Neuro-Symbolic Artificial Intelligence: Healthcare Perspectives</title>
+    <updated>2025-03-23T21:33:38Z</updated>
+    <link href="https://arxiv.org/abs/2503.18213v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.18213v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Over the last few decades, Artificial Intelligence (AI) scientists have been conducting investigations to attain human-level performance by a machine in accomplishing a cognitive task. Within machine learning, the ultimate aspiration is to attain Artificial General Intelligence (AGI) through a machine. This pursuit has led to the exploration of two distinct AI paradigms. Symbolic AI, also known as classical or GOFAI (Good Old-Fashioned AI) and Connectionist (Sub-symbolic) AI, represented by Neural Systems, are two mutually exclusive paradigms. Symbolic AI excels in reasoning, explainability, and knowledge representation but faces challenges in processing complex real-world data with noise. Conversely, deep learning (Black-Box systems) research breakthroughs in neural networks are notable, yet they lack reasoning and interpretability. Neuro-symbolic AI (NeSy), an emerging area of AI research, attempts to bridge this gap by integrating logical reasoning into neural networks, enabling them to learn and reason with symbolic representations. While a long path, this strategy has made significant progress towards achieving common sense reasoning by systems. This article conducts an extensive review of over 977 studies from prominent scientific databases (DBLP, ACL, IEEExplore, Scopus, PubMed, ICML, ICLR), thoroughly examining the multifaceted capabilities of Neuro-Symbolic AI, with a particular focus on its healthcare applications, particularly in drug discovery, and Protein engineering research. The survey addresses vital themes, including reasoning, explainability, integration strategies, 41 healthcare-related use cases, benchmarking, datasets, current approach limitations from both healthcare and broader perspectives, and proposed novel approaches for future experiments.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-23T21:33:38Z</published>
+    <arxiv:comment>18 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Delower Hossain</name>
+    </author>
+    <author>
+      <name>Jake Y Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.07189v2</id>
+    <title>AI-Guided Molecular Simulations in VR: Exploring Strategies for Imitation Learning in Hyperdimensional Molecular Systems</title>
+    <updated>2025-11-03T11:59:01Z</updated>
+    <link href="https://arxiv.org/abs/2409.07189v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.07189v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Molecular dynamics (MD) simulations are a crucial computational tool for researchers to understand and engineer molecular structure and function in areas such as drug discovery, protein engineering, and material design. Despite their utility, MD simulations are expensive, owing to the high dimensionality of molecular systems. Interactive molecular dynamics in virtual reality (iMD-VR) has recently emerged as a "human-in-the-loop" strategy for efficiently navigating hyper-dimensional molecular systems. By providing an immersive 3D environment that enables visualization and manipulation of real-time molecular simulations running on high-performance computing architectures, iMD-VR enables researchers to reach out and guide molecular conformational dynamics, in order to efficiently explore complex, high-dimensional molecular systems. Moreover, iMD-VR simulations generate rich datasets that capture human experts' spatial insight regarding molecular structure and function. This paper explores the use of researcher-generated iMD-VR datasets to train AI agents via imitation learning (IL). IL enables agents to mimic complex behaviours from expert demonstrations, circumventing the need for explicit programming or intricate reward design. In this article, we review IL across robotics and Multi-agents systems domains which are comparable to iMD-VR, and discuss how iMD-VR recordings could be used to train IL models to interact with MD simulations. We then illustrate the applications of these ideas through a proof-of-principle study where iMD-VR data was used to train a CNN network on a simple molecular manipulation task; namely, threading a small molecule through a nanotube pore. Finally, we outline future research directions and potential challenges of using AI agents to augment human expertise in navigating vast molecular conformational spaces.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-11T11:21:02Z</published>
+    <arxiv:comment>(First presented at the First Workshop on "eXtended Reality \&amp; Intelligent Agents" (XRIA24) @ ECAI24, Santiago De Compostela (Spain), 20 October 2024)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>SN COMPUT. SCI. 6, 922 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Mohamed Dhouioui</name>
+    </author>
+    <author>
+      <name>Jonathan Barnoud</name>
+    </author>
+    <author>
+      <name>Rhoslyn Roebuck Williams</name>
+    </author>
+    <author>
+      <name>Harry J. Stroud</name>
+    </author>
+    <author>
+      <name>Phil Bates</name>
+    </author>
+    <author>
+      <name>David R. Glowacki</name>
+    </author>
+    <arxiv:doi>10.1007/s42979-025-04465-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s42979-025-04465-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.06769v2</id>
+    <title>DISCOVERYWORLD: A Virtual Environment for Developing and Evaluating Automated Scientific Discovery Agents</title>
+    <updated>2024-10-07T20:19:15Z</updated>
+    <link href="https://arxiv.org/abs/2406.06769v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.06769v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automated scientific discovery promises to accelerate progress across scientific domains. However, developing and evaluating an AI agent's capacity for end-to-end scientific reasoning is challenging as running real-world experiments is often prohibitively expensive or infeasible. In this work we introduce DISCOVERYWORLD, the first virtual environment for developing and benchmarking an agent's ability to perform complete cycles of novel scientific discovery. DISCOVERYWORLD contains a variety of different challenges, covering topics as diverse as radioisotope dating, rocket science, and proteomics, to encourage development of general discovery skills rather than task-specific solutions. DISCOVERYWORLD itself is an inexpensive, simulated, text-based environment (with optional 2D visual overlay). It includes 120 different challenge tasks, spanning eight topics each with three levels of difficulty and several parametric variations. Each task requires an agent to form hypotheses, design and run experiments, analyze results, and act on conclusions. DISCOVERYWORLD further provides three automatic metrics for evaluating performance, based on (a) task completion, (b) task-relevant actions taken, and (c) the discovered explanatory knowledge. We find that strong baseline agents, that perform well in prior published environments, struggle on most DISCOVERYWORLD tasks, suggesting that DISCOVERYWORLD captures some of the novel challenges of discovery, and thus that DISCOVERYWORLD may help accelerate near-term development and assessment of scientific discovery competency in agents. Code available at: www.github.com/allenai/discoveryworld</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-10T20:08:44Z</published>
+    <arxiv:comment>Accepted to NeurIPS 2024 (Benchmark Track, Spotlight)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Peter Jansen</name>
+    </author>
+    <author>
+      <name>Marc-Alexandre Côté</name>
+    </author>
+    <author>
+      <name>Tushar Khot</name>
+    </author>
+    <author>
+      <name>Erin Bransom</name>
+    </author>
+    <author>
+      <name>Bhavana Dalvi Mishra</name>
+    </author>
+    <author>
+      <name>Bodhisattwa Prasad Majumder</name>
+    </author>
+    <author>
+      <name>Oyvind Tafjord</name>
+    </author>
+    <author>
+      <name>Peter Clark</name>
+    </author>
+  </entry>
+</feed>

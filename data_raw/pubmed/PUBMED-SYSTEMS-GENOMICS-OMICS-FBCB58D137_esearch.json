@@ -1,0 +1,27 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "0",
+    "retstart": "0",
+    "querykey": "1",
+    "webenv": "MCID_6a8f55f5ed9a22a96f07be70",
+    "idlist": [],
+    "translationset": [],
+    "querytranslation": "(\"agentic bioinformatics\"[Title/Abstract] OR \"bioinformatics agent\"[Title/Abstract] OR \"LLM agent\"[Title/Abstract] OR \"large language model agent\"[Title/Abstract] OR \"multi-agent system\"[Title/Abstract] OR \"autonomous agent\"[Title/Abstract] OR \"AI scientist\"[Title/Abstract]) AND (\"bioinformatics\"[Title/Abstract] OR \"genomics\"[Title/Abstract] OR \"transcriptomics\"[Title/Abstract] OR \"multi-omics\"[Title/Abstract] OR \"gene editing\"[Title/Abstract] OR \"CRISPR\"[Title/Abstract]) AND 2022/01/01:2026/07/31[Date - Publication]",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"biological AI agent\"[Title/Abstract]",
+        "\"biomedical AI agent\"[Title/Abstract]",
+        "\"scientific discovery agent\"[Title/Abstract]",
+        "\"tool-using agent\"[Title/Abstract]",
+        "\"tool-augmented LLM\"[Title/Abstract]"
+      ],
+      "outputmessages": []
+    }
+  }
+}

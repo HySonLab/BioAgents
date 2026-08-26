@@ -1,0 +1,44 @@
+{
+  "review_name": "FEV agentic bioinformatics evidence map",
+  "date_from": "2022-01-01",
+  "date_until": "2026-07-31",
+  "contact_email": "phpham@uab.edu",
+  "ncbi_api_key": "",
+  "crossref_mailto": "phpham@uab.edu",
+  "max_records_per_query": 100000,
+  "sources": {
+    "pubmed": true,
+    "europe_pmc": true,
+    "arxiv": true,
+    "crossref": true
+  },
+  "agent_terms": [
+    "agentic bioinformatics",
+    "bioinformatics agent",
+    "biological AI agent",
+    "biomedical AI agent",
+    "LLM agent",
+    "large language model agent",
+    "multi-agent system",
+    "autonomous agent",
+    "AI scientist",
+    "scientific discovery agent",
+    "tool-using agent",
+    "tool-augmented LLM"
+  ],
+  "domain_groups": {
+    "genomics_omics": ["bioinformatics", "genomics", "transcriptomics", "multi-omics", "gene editing", "CRISPR"],
+    "single_cell_spatial": ["single-cell", "single cell", "spatial transcriptomics", "spatial omics", "spatial biology"],
+    "protein_science": ["proteomics", "protein design", "protein engineering", "structural biology"],
+    "drug_discovery": ["drug discovery", "molecular design", "therapeutic reasoning", "ADMET"],
+    "pathology_imaging": ["computational pathology", "whole-slide imaging", "whole slide", "microscopy", "bioimaging"],
+    "general_biomedical": ["biomedical data analysis", "biological workflow", "bioinformatics workflow"]
+  },
+  "evaluation_terms": [
+    "benchmark", "evaluation", "workflow", "tool execution", "code execution",
+    "planning", "orchestration", "workflow state", "repair", "debugging",
+    "verification", "provenance", "replayability", "reproducibility",
+    "robustness", "experimental validation", "prospective validation", "closed-loop"
+  ],
+  "query_modes": ["systems", "evaluation_resources"]
+}

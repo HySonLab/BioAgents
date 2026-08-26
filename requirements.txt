@@ -1,0 +1,8 @@
+pandas
+openpyxl
+rapidfuzz
+unidecode
+rispy
+bibtexparser
+feedparser
+requests

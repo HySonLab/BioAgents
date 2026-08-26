@@ -1,0 +1,27 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "0",
+    "retstart": "0",
+    "querykey": "1",
+    "webenv": "MCID_6a8f5600f15ea8716506e5ad",
+    "idlist": [],
+    "translationset": [],
+    "querytranslation": "(\"agentic bioinformatics\"[Title/Abstract] OR \"bioinformatics agent\"[Title/Abstract] OR \"LLM agent\"[Title/Abstract] OR \"large language model agent\"[Title/Abstract] OR \"multi-agent system\"[Title/Abstract] OR \"autonomous agent\"[Title/Abstract] OR \"AI scientist\"[Title/Abstract]) AND (\"computational pathology\"[Title/Abstract] OR \"whole-slide imaging\"[Title/Abstract] OR \"whole slide\"[Title/Abstract] OR \"microscopy\"[Title/Abstract] OR \"bioimaging\"[Title/Abstract]) AND (\"benchmark\"[Title/Abstract] OR \"evaluation\"[Title/Abstract] OR \"workflow\"[Title/Abstract] OR \"tool execution\"[Title/Abstract] OR \"code execution\"[Title/Abstract] OR \"planning\"[Title/Abstract] OR \"orchestration\"[Title/Abstract] OR \"workflow state\"[Title/Abstract] OR \"repair\"[Title/Abstract] OR \"debugging\"[Title/Abstract] OR \"verification\"[Title/Abstract] OR \"provenance\"[Title/Abstract] OR \"replayability\"[Title/Abstract] OR \"reproducibility\"[Title/Abstract] OR \"robustness\"[Title/Abstract] OR \"experimental validation\"[Title/Abstract] OR \"prospective validation\"[Title/Abstract] OR \"closed-loop\"[Title/Abstract]) AND 2022/01/01:2026/07/31[Date - Publication]",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"biological AI agent\"[Title/Abstract]",
+        "\"biomedical AI agent\"[Title/Abstract]",
+        "\"scientific discovery agent\"[Title/Abstract]",
+        "\"tool-using agent\"[Title/Abstract]",
+        "\"tool-augmented LLM\"[Title/Abstract]"
+      ],
+      "outputmessages": []
+    }
+  }
+}

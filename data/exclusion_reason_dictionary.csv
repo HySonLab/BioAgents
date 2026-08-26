@@ -1,0 +1,10 @@
+code,label
+NO_BIO_APPLICATION,No biological or biomedical application
+NO_WORKFLOW_CAPABILITY,No substantive agent-level or workflow-control capability
+ISOLATED_PREDICTIVE_MODEL,Isolated predictive or foundation model without orchestration
+CONVERSATIONAL_ONLY,Conversational or educational application only
+INSUFFICIENT_DETAIL,Insufficient implementation or evaluation detail
+DUPLICATE,Exact duplicate record
+SUPERSEDED_VERSION,Duplicate or superseded publication version
+BENCHMARK_OUT_OF_SCOPE,Benchmark or evaluation resource outside scope
+OTHER,Other documented reason
