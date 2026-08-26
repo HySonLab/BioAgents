@@ -1,1 +1,1 @@
-# Survey of Bioinformatics Agents Papers
+# Toward Accountable Agentic Bioinformatics through Functionality, Evidence, and Validation
