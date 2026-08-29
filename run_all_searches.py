@@ -3,14 +3,12 @@ import argparse, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 
-SCRIPTS = {source: ROOT / "crawl_data" / f"search_{source}.py" for source in ( "pubmed", "", "arxiv", "europe_pmc")}
+SCRIPTS = {source: ROOT / "crawl_data" / f"search_{source}.py" for source in ( "arxiv", "europe_pmc", "pubmed" )}
 def main():
     parser = argparse.ArgumentParser(); parser.add_argument("--config", default=str(ROOT / "config" / "search_config.json")); parser.add_argument("--sources", nargs="+", choices=SCRIPTS, default=list(SCRIPTS)); args = parser.parse_args()
     failures = []
     try:
         for source in args.sources:
-            if source != 'pubmed':
-                continue
             command = [sys.executable, str(SCRIPTS[source]), "--config", args.config]
             print("\nRUNNING", " ".join(command), flush=True)
             result = subprocess.run(command, cwd=ROOT)

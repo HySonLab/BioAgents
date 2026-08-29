@@ -2,18 +2,21 @@ file,input_rows,source_values
 /home/phpham/Work/BioAgents/data_raw/arxiv/computational_pathology_bioimaging.csv,81,arXiv
 /home/phpham/Work/BioAgents/data_raw/arxiv/cross_domain_bioinformatics.csv,6,arXiv
 /home/phpham/Work/BioAgents/data_raw/arxiv/drug_discovery.csv,355,arXiv
-/home/phpham/Work/BioAgents/data_raw/arxiv/genomics_transcriptomics_gene_perturbation.csv,118,arXiv
-/home/phpham/Work/BioAgents/data_raw/arxiv/proteomics_protein_science.csv,13,arXiv
-/home/phpham/Work/BioAgents/data_raw/arxiv/single_cell_spatial_omics.csv,43,arXiv
+/home/phpham/Work/BioAgents/data_raw/arxiv/genomics.csv,28,arXiv
+/home/phpham/Work/BioAgents/data_raw/arxiv/proteomics.csv,68,arXiv
+/home/phpham/Work/BioAgents/data_raw/arxiv/spatial_omics.csv,68,arXiv
+/home/phpham/Work/BioAgents/data_raw/arxiv/transcriptomics.csv,43,arXiv
 /home/phpham/Work/BioAgents/data_raw/europe_pmc/computational_pathology_bioimaging.csv,90,Europe PMC
 /home/phpham/Work/BioAgents/data_raw/europe_pmc/cross_domain_bioinformatics.csv,6,Europe PMC
 /home/phpham/Work/BioAgents/data_raw/europe_pmc/drug_discovery.csv,567,Europe PMC
-/home/phpham/Work/BioAgents/data_raw/europe_pmc/genomics_transcriptomics_gene_perturbation.csv,286,Europe PMC
-/home/phpham/Work/BioAgents/data_raw/europe_pmc/proteomics_protein_science.csv,122,Europe PMC
-/home/phpham/Work/BioAgents/data_raw/europe_pmc/single_cell_spatial_omics.csv,89,Europe PMC
+/home/phpham/Work/BioAgents/data_raw/europe_pmc/genomics.csv,236,Europe PMC
+/home/phpham/Work/BioAgents/data_raw/europe_pmc/proteomics.csv,122,Europe PMC
+/home/phpham/Work/BioAgents/data_raw/europe_pmc/spatial_omics.csv,91,Europe PMC
+/home/phpham/Work/BioAgents/data_raw/europe_pmc/transcriptomics.csv,111,Europe PMC
 /home/phpham/Work/BioAgents/data_raw/pubmed/computational_pathology_bioimaging.csv,63,PubMed
 /home/phpham/Work/BioAgents/data_raw/pubmed/cross_domain_bioinformatics.csv,2,PubMed
 /home/phpham/Work/BioAgents/data_raw/pubmed/drug_discovery.csv,428,PubMed
-/home/phpham/Work/BioAgents/data_raw/pubmed/genomics_transcriptomics_gene_perturbation.csv,163,PubMed
-/home/phpham/Work/BioAgents/data_raw/pubmed/proteomics_protein_science.csv,79,PubMed
-/home/phpham/Work/BioAgents/data_raw/pubmed/single_cell_spatial_omics.csv,38,PubMed
+/home/phpham/Work/BioAgents/data_raw/pubmed/genomics.csv,130,PubMed
+/home/phpham/Work/BioAgents/data_raw/pubmed/proteomics.csv,79,PubMed
+/home/phpham/Work/BioAgents/data_raw/pubmed/spatial_omics.csv,42,PubMed
+/home/phpham/Work/BioAgents/data_raw/pubmed/transcriptomics.csv,51,PubMed
