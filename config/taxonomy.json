@@ -1,0 +1,321 @@
+{
+  "primary_domains": {
+    "genomics_transcriptomics_gene_perturbation": {
+      "label": "Genomics, Transcriptomics, and Gene Perturbation",
+      "priority": 50,
+      "terms": [
+        "genomics",
+        "genomic",
+        "genome",
+        "transcriptomics",
+        "transcriptomic",
+        "rna-seq",
+        "rna sequencing",
+        "chip-seq",
+        "atac-seq",
+        "variant",
+        "gwas",
+        "mendelian",
+        "gene expression",
+        "gene regulatory",
+        "crispr",
+        "gene editing",
+        "gene perturbation",
+        "perturb-seq",
+        "sra metadata",
+        "geo metadata",
+        "blast",
+        "ncbi gene",
+        "snp"
+      ]
+    },
+    "single_cell_spatial_omics": {
+      "label": "Single-Cell and Spatial Omics",
+      "priority": 70,
+      "terms": [
+        "single-cell",
+        "single cell",
+        "scrna-seq",
+        "scrnaseq",
+        "scatac",
+        "single-cell multiome",
+        "spatial transcriptomics",
+        "spatial omics",
+        "spatial proteomics",
+        "cell annotation",
+        "cell type annotation",
+        "cell-type annotation",
+        "cell-cell communication",
+        "trajectory inference",
+        "pseudotime",
+        "visium",
+        "xenium",
+        "merfish",
+        "stereoseq",
+        "stereo-seq",
+        "codex",
+        "cycif",
+        "mibi",
+        "imc"
+      ]
+    },
+    "proteomics_protein_science": {
+      "label": "Proteomics and Protein Science",
+      "priority": 65,
+      "terms": [
+        "proteomics",
+        "proteome",
+        "protein design",
+        "protein engineering",
+        "protein structure",
+        "structural biology",
+        "protein function",
+        "gene ontology prediction",
+        "binder design",
+        "nanobody",
+        "antibody design",
+        "enzyme design",
+        "alphafold",
+        "esmfold",
+        "proteinmpnn",
+        "rfdiffusion",
+        "rosetta",
+        "pdb",
+        "uniprot",
+        "mass spectrometry",
+        "cytof"
+      ]
+    },
+    "drug_discovery_therapeutic_development": {
+      "label": "Drug Discovery and Therapeutic Development",
+      "priority": 60,
+      "terms": [
+        "drug discovery",
+        "drug repurposing",
+        "therapeutic",
+        "treatment recommendation",
+        "target identification",
+        "molecular design",
+        "molecule design",
+        "molecular generation",
+        "virtual screening",
+        "lead optimization",
+        "admet",
+        "drug-target",
+        "dti",
+        "docking",
+        "pharmacovigilance",
+        "adverse event",
+        "clinical trial",
+        "target trial",
+        "chembl",
+        "drugbank",
+        "pubchem",
+        "smiles"
+      ]
+    },
+    "computational_pathology_bioimaging": {
+      "label": "Computational Pathology and Bioimaging",
+      "priority": 68,
+      "terms": [
+        "computational pathology",
+        "digital pathology",
+        "histopathology",
+        "whole-slide",
+        "whole slide",
+        "wsi",
+        "microscopy",
+        "bioimaging",
+        "biological imaging",
+        "medical imaging",
+        "spatial imaging",
+        "image segmentation",
+        "pathologist",
+        "h&e",
+        "roi",
+        "tumor region"
+      ]
+    },
+    "cross_domain_workflow_automation": {
+      "label": "Cross-Domain Bioinformatics Workflow Automation",
+      "priority": 100,
+      "terms": [
+        "bioinformatics workflow",
+        "biomedical data analysis",
+        "biological data analysis",
+        "workflow automation",
+        "workflow orchestration",
+        "multi-omics workflow",
+        "omics analysis",
+        "end-to-end bioinformatics",
+        "autonomous biomedical research",
+        "scientific discovery agent",
+        "general-purpose biomedical",
+        "multiple biomedical domains"
+      ]
+    }
+  },
+  "omics_modalities": {
+    "genomics": [
+      "genomics",
+      "genome",
+      "wgs",
+      "wes",
+      "variant",
+      "vcf",
+      "gwas"
+    ],
+    "transcriptomics": [
+      "transcriptomics",
+      "rna-seq",
+      "rna sequencing",
+      "gene expression",
+      "transcriptome"
+    ],
+    "epigenomics": [
+      "epigenomics",
+      "chip-seq",
+      "atac-seq",
+      "methylation",
+      "chromatin"
+    ],
+    "single_cell_omics": [
+      "single-cell",
+      "single cell",
+      "scrna-seq",
+      "scrnaseq",
+      "scatac",
+      "single-cell multiome"
+    ],
+    "spatial_omics": [
+      "spatial transcriptomics",
+      "spatial omics",
+      "visium",
+      "xenium",
+      "merfish",
+      "stereo-seq"
+    ],
+    "proteomics": [
+      "proteomics",
+      "proteome",
+      "mass spectrometry",
+      "rppa",
+      "cytof"
+    ],
+    "spatial_proteomics": [
+      "spatial proteomics",
+      "codex",
+      "cycif",
+      "mibi",
+      "imc"
+    ],
+    "metabolomics": [
+      "metabolomics",
+      "metabolome"
+    ],
+    "multi_omics": [
+      "multi-omics",
+      "multiomics",
+      "multi omics"
+    ]
+  },
+  "workflow_objectives": {
+    "retrieval_metadata": [
+      "retrieval",
+      "database query",
+      "database querying",
+      "metadata extraction",
+      "data access",
+      "literature search"
+    ],
+    "analysis_execution": [
+      "analysis workflow",
+      "code execution",
+      "tool execution",
+      "preprocessing",
+      "differential expression",
+      "segmentation",
+      "registration"
+    ],
+    "annotation_interpretation": [
+      "annotation",
+      "interpretation",
+      "gene set",
+      "pathway",
+      "cell type",
+      "report generation"
+    ],
+    "prediction_modeling": [
+      "prediction",
+      "predictive",
+      "classification",
+      "regression",
+      "model training",
+      "automl"
+    ],
+    "diagnostic_clinical_reasoning": [
+      "diagnosis",
+      "diagnostic",
+      "clinical reasoning",
+      "treatment recommendation",
+      "rare disease"
+    ],
+    "experimental_design": [
+      "experimental design",
+      "experiment design",
+      "perturbation design",
+      "guide rna",
+      "crispr experiment"
+    ],
+    "molecular_protein_design": [
+      "protein design",
+      "molecular design",
+      "binder design",
+      "nanobody design",
+      "lead optimization"
+    ],
+    "benchmark_evaluation": [
+      "benchmark",
+      "benchmarking",
+      "evaluation suite",
+      "test suite",
+      "leaderboard"
+    ]
+  },
+  "record_type_terms": {
+    "benchmark_evaluation_resource": [
+      "benchmark",
+      "benchmarking",
+      "evaluation suite",
+      "test suite",
+      "leaderboard",
+      "challenge set"
+    ],
+    "review_perspective": [
+      "systematic review",
+      "scoping review",
+      "review of",
+      "survey of",
+      "perspective",
+      "taxonomy"
+    ],
+    "workflow_infrastructure": [
+      "workflow engine",
+      "workflow infrastructure",
+      "agent-readable interface",
+      "model server",
+      "tool server"
+    ],
+    "candidate_system": [
+      "agent",
+      "agentic",
+      "copilot",
+      "autonomous",
+      "multi-agent",
+      "multiagent",
+      "tool-augmented",
+      "workflow automation",
+      "orchestration"
+    ]
+  }
+}
