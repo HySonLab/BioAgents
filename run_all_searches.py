@@ -9,6 +9,8 @@ def main():
     failures = []
     try:
         for source in args.sources:
+            if source in ["europe_pmc", "pubmed"]:
+                continue
             command = [sys.executable, str(SCRIPTS[source]), "--config", args.config]
             print("\nRUNNING", " ".join(command), flush=True)
             result = subprocess.run(command, cwd=ROOT)

@@ -1,0 +1,218 @@
+2026-09-01 23:15:28,822 | INFO | 
+DOMAIN 1/7: genomics
+2026-09-01 23:15:28,822 | INFO | Small PubMed queries: 14
+2026-09-01 23:15:29,049 | INFO | [genomics 1/14] mode=explicit_agents; PubMed matches=58
+2026-09-01 23:15:29,050 | INFO | [genomics 1/14] fetch=0-58 of 58
+2026-09-01 23:15:31,589 | INFO | [genomics 1/14] unique kept=58, rejected=0
+2026-09-01 23:15:31,936 | INFO | [genomics 2/14] mode=explicit_agents; PubMed matches=17
+2026-09-01 23:15:31,936 | INFO | [genomics 2/14] fetch=0-17 of 17
+2026-09-01 23:15:33,145 | INFO | [genomics 2/14] unique kept=17, rejected=0
+2026-09-01 23:15:33,462 | INFO | [genomics 3/14] mode=explicit_agents; PubMed matches=65
+2026-09-01 23:15:33,462 | INFO | [genomics 3/14] fetch=0-65 of 65
+2026-09-01 23:15:35,333 | INFO | [genomics 3/14] unique kept=65, rejected=0
+2026-09-01 23:15:35,701 | INFO | [genomics 4/14] mode=explicit_agents; PubMed matches=11
+2026-09-01 23:15:35,701 | INFO | [genomics 4/14] fetch=0-11 of 11
+2026-09-01 23:15:36,320 | INFO | [genomics 4/14] unique kept=11, rejected=0
+2026-09-01 23:15:36,618 | INFO | [genomics 5/14] mode=explicit_agents; PubMed matches=2
+2026-09-01 23:15:36,618 | INFO | [genomics 5/14] fetch=0-2 of 2
+2026-09-01 23:15:36,995 | INFO | [genomics 5/14] unique kept=2, rejected=0
+2026-09-01 23:15:37,280 | INFO | [genomics 6/14] mode=explicit_agents; PubMed matches=0
+2026-09-01 23:15:37,281 | INFO | [genomics 6/14] unique kept=0, rejected=0
+2026-09-01 23:15:37,566 | INFO | [genomics 7/14] mode=implicit_functional_agents; PubMed matches=6
+2026-09-01 23:15:37,566 | INFO | [genomics 7/14] fetch=0-6 of 6
+2026-09-01 23:15:38,350 | INFO | [genomics 7/14] unique kept=6, rejected=0
+2026-09-01 23:15:38,629 | INFO | [genomics 8/14] mode=implicit_functional_agents; PubMed matches=4
+2026-09-01 23:15:38,629 | INFO | [genomics 8/14] fetch=0-4 of 4
+2026-09-01 23:15:38,986 | INFO | [genomics 8/14] unique kept=4, rejected=0
+2026-09-01 23:15:39,292 | INFO | [genomics 9/14] mode=implicit_functional_agents; PubMed matches=3
+2026-09-01 23:15:39,292 | INFO | [genomics 9/14] fetch=0-3 of 3
+2026-09-01 23:15:39,639 | INFO | [genomics 9/14] unique kept=3, rejected=0
+2026-09-01 23:15:39,911 | INFO | [genomics 10/14] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:15:39,911 | INFO | [genomics 10/14] fetch=0-2 of 2
+2026-09-01 23:15:40,262 | INFO | [genomics 10/14] unique kept=2, rejected=0
+2026-09-01 23:15:40,570 | INFO | [genomics 11/14] mode=implicit_functional_agents; PubMed matches=1
+2026-09-01 23:15:40,570 | INFO | [genomics 11/14] fetch=0-1 of 1
+2026-09-01 23:15:40,883 | INFO | [genomics 11/14] unique kept=1, rejected=0
+2026-09-01 23:15:41,614 | INFO | [genomics 12/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:41,614 | INFO | [genomics 12/14] unique kept=0, rejected=0
+2026-09-01 23:15:41,899 | INFO | [genomics 13/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:41,899 | INFO | [genomics 13/14] unique kept=0, rejected=0
+2026-09-01 23:15:42,175 | INFO | [genomics 14/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:42,176 | INFO | [genomics 14/14] unique kept=0, rejected=0
+2026-09-01 23:15:44,590 | INFO | genomics: final unique kept=124, rejected after revalidation=0
+2026-09-01 23:15:44,594 | INFO | 
+DOMAIN 2/7: transcriptomics
+2026-09-01 23:15:44,594 | INFO | Small PubMed queries: 14
+2026-09-01 23:15:44,819 | INFO | [transcriptomics 1/14] mode=explicit_agents; PubMed matches=26
+2026-09-01 23:15:44,819 | INFO | [transcriptomics 1/14] fetch=0-26 of 26
+2026-09-01 23:15:46,370 | INFO | [transcriptomics 1/14] unique kept=26, rejected=0
+2026-09-01 23:15:46,710 | INFO | [transcriptomics 2/14] mode=explicit_agents; PubMed matches=20
+2026-09-01 23:15:46,710 | INFO | [transcriptomics 2/14] fetch=0-20 of 20
+2026-09-01 23:15:47,410 | INFO | [transcriptomics 2/14] unique kept=20, rejected=0
+2026-09-01 23:15:47,728 | INFO | [transcriptomics 3/14] mode=explicit_agents; PubMed matches=25
+2026-09-01 23:15:47,728 | INFO | [transcriptomics 3/14] fetch=0-25 of 25
+2026-09-01 23:15:48,601 | INFO | [transcriptomics 3/14] unique kept=25, rejected=0
+2026-09-01 23:15:48,928 | INFO | [transcriptomics 4/14] mode=explicit_agents; PubMed matches=28
+2026-09-01 23:15:48,929 | INFO | [transcriptomics 4/14] fetch=0-28 of 28
+2026-09-01 23:15:49,997 | INFO | [transcriptomics 4/14] unique kept=28, rejected=0
+2026-09-01 23:15:50,257 | INFO | [transcriptomics 5/14] mode=explicit_agents; PubMed matches=2
+2026-09-01 23:15:50,257 | INFO | [transcriptomics 5/14] fetch=0-2 of 2
+2026-09-01 23:15:50,539 | INFO | [transcriptomics 5/14] unique kept=2, rejected=0
+2026-09-01 23:15:50,852 | INFO | [transcriptomics 6/14] mode=explicit_agents; PubMed matches=3
+2026-09-01 23:15:50,852 | INFO | [transcriptomics 6/14] fetch=0-3 of 3
+2026-09-01 23:15:51,209 | INFO | [transcriptomics 6/14] unique kept=3, rejected=0
+2026-09-01 23:15:51,540 | INFO | [transcriptomics 7/14] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:15:51,540 | INFO | [transcriptomics 7/14] fetch=0-2 of 2
+2026-09-01 23:15:51,839 | INFO | [transcriptomics 7/14] unique kept=2, rejected=0
+2026-09-01 23:15:52,131 | INFO | [transcriptomics 8/14] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:15:52,131 | INFO | [transcriptomics 8/14] fetch=0-2 of 2
+2026-09-01 23:15:52,983 | INFO | [transcriptomics 8/14] unique kept=2, rejected=0
+2026-09-01 23:15:53,303 | INFO | [transcriptomics 9/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:53,303 | INFO | [transcriptomics 9/14] unique kept=0, rejected=0
+2026-09-01 23:15:53,592 | INFO | [transcriptomics 10/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:53,592 | INFO | [transcriptomics 10/14] unique kept=0, rejected=0
+2026-09-01 23:15:53,862 | INFO | [transcriptomics 11/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:53,863 | INFO | [transcriptomics 11/14] unique kept=0, rejected=0
+2026-09-01 23:15:54,213 | INFO | [transcriptomics 12/14] mode=implicit_functional_agents; PubMed matches=1
+2026-09-01 23:15:54,213 | INFO | [transcriptomics 12/14] fetch=0-1 of 1
+2026-09-01 23:15:54,573 | INFO | [transcriptomics 12/14] unique kept=1, rejected=0
+2026-09-01 23:15:54,849 | INFO | [transcriptomics 13/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:54,849 | INFO | [transcriptomics 13/14] unique kept=0, rejected=0
+2026-09-01 23:15:55,151 | INFO | [transcriptomics 14/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:55,151 | INFO | [transcriptomics 14/14] unique kept=0, rejected=0
+2026-09-01 23:15:56,828 | INFO | transcriptomics: final unique kept=70, rejected after revalidation=0
+2026-09-01 23:15:56,831 | INFO | 
+DOMAIN 3/7: epigenomics
+2026-09-01 23:15:56,831 | INFO | Small PubMed queries: 7
+2026-09-01 23:15:56,965 | INFO | [epigenomics 1/7] mode=explicit_agents; PubMed matches=6
+2026-09-01 23:15:56,966 | INFO | [epigenomics 1/7] fetch=0-6 of 6
+2026-09-01 23:15:57,447 | INFO | [epigenomics 1/7] unique kept=6, rejected=0
+2026-09-01 23:15:57,741 | INFO | [epigenomics 2/7] mode=explicit_agents; PubMed matches=6
+2026-09-01 23:15:57,741 | INFO | [epigenomics 2/7] fetch=0-6 of 6
+2026-09-01 23:15:58,203 | INFO | [epigenomics 2/7] unique kept=6, rejected=0
+2026-09-01 23:15:58,503 | INFO | [epigenomics 3/7] mode=explicit_agents; PubMed matches=3
+2026-09-01 23:15:58,503 | INFO | [epigenomics 3/7] fetch=0-3 of 3
+2026-09-01 23:15:58,864 | INFO | [epigenomics 3/7] unique kept=3, rejected=0
+2026-09-01 23:15:59,192 | INFO | [epigenomics 4/7] mode=implicit_functional_agents; PubMed matches=1
+2026-09-01 23:15:59,192 | INFO | [epigenomics 4/7] fetch=0-1 of 1
+2026-09-01 23:15:59,496 | INFO | [epigenomics 4/7] unique kept=1, rejected=0
+2026-09-01 23:15:59,765 | INFO | [epigenomics 5/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:15:59,765 | INFO | [epigenomics 5/7] unique kept=0, rejected=0
+2026-09-01 23:16:00,073 | INFO | [epigenomics 6/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:00,073 | INFO | [epigenomics 6/7] unique kept=0, rejected=0
+2026-09-01 23:16:00,343 | INFO | [epigenomics 7/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:00,343 | INFO | [epigenomics 7/7] unique kept=0, rejected=0
+2026-09-01 23:16:00,733 | INFO | epigenomics: final unique kept=13, rejected after revalidation=0
+2026-09-01 23:16:00,735 | INFO | 
+DOMAIN 4/7: proteomics
+2026-09-01 23:16:00,735 | INFO | Small PubMed queries: 7
+2026-09-01 23:16:00,887 | INFO | [proteomics 1/7] mode=explicit_agents; PubMed matches=52
+2026-09-01 23:16:00,887 | INFO | [proteomics 1/7] fetch=0-52 of 52
+2026-09-01 23:16:02,128 | INFO | [proteomics 1/7] unique kept=52, rejected=0
+2026-09-01 23:16:02,397 | INFO | [proteomics 2/7] mode=explicit_agents; PubMed matches=42
+2026-09-01 23:16:02,397 | INFO | [proteomics 2/7] fetch=0-42 of 42
+2026-09-01 23:16:03,504 | INFO | [proteomics 2/7] unique kept=42, rejected=0
+2026-09-01 23:16:03,806 | INFO | [proteomics 3/7] mode=explicit_agents; PubMed matches=1
+2026-09-01 23:16:03,807 | INFO | [proteomics 3/7] fetch=0-1 of 1
+2026-09-01 23:16:04,151 | INFO | [proteomics 3/7] unique kept=1, rejected=0
+2026-09-01 23:16:04,431 | INFO | [proteomics 4/7] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:16:04,432 | INFO | [proteomics 4/7] fetch=0-2 of 2
+2026-09-01 23:16:04,803 | INFO | [proteomics 4/7] unique kept=2, rejected=0
+2026-09-01 23:16:05,091 | INFO | [proteomics 5/7] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:16:05,092 | INFO | [proteomics 5/7] fetch=0-2 of 2
+2026-09-01 23:16:05,424 | INFO | [proteomics 5/7] unique kept=2, rejected=0
+2026-09-01 23:16:05,746 | INFO | [proteomics 6/7] mode=implicit_functional_agents; PubMed matches=1
+2026-09-01 23:16:05,746 | INFO | [proteomics 6/7] fetch=0-1 of 1
+2026-09-01 23:16:06,125 | INFO | [proteomics 6/7] unique kept=1, rejected=0
+2026-09-01 23:16:06,529 | INFO | [proteomics 7/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:06,529 | INFO | [proteomics 7/7] unique kept=0, rejected=0
+2026-09-01 23:16:07,915 | INFO | proteomics: final unique kept=87, rejected after revalidation=0
+2026-09-01 23:16:07,919 | INFO | 
+DOMAIN 5/7: drug_discovery
+2026-09-01 23:16:07,919 | INFO | Small PubMed queries: 14
+2026-09-01 23:16:08,070 | INFO | [drug_discovery 1/14] mode=explicit_agents; PubMed matches=243
+2026-09-01 23:16:08,070 | INFO | [drug_discovery 1/14] fetch=0-200 of 243
+2026-09-01 23:16:12,946 | INFO | [drug_discovery 1/14] fetch=200-243 of 243
+2026-09-01 23:16:14,842 | INFO | [drug_discovery 1/14] unique kept=242, rejected=1
+2026-09-01 23:16:15,145 | INFO | [drug_discovery 2/14] mode=explicit_agents; PubMed matches=43
+2026-09-01 23:16:15,145 | INFO | [drug_discovery 2/14] fetch=0-43 of 43
+2026-09-01 23:16:16,332 | INFO | [drug_discovery 2/14] unique kept=43, rejected=0
+2026-09-01 23:16:16,775 | INFO | [drug_discovery 3/14] mode=explicit_agents; PubMed matches=151
+2026-09-01 23:16:16,775 | INFO | [drug_discovery 3/14] fetch=0-151 of 151
+2026-09-01 23:16:20,292 | INFO | [drug_discovery 3/14] unique kept=151, rejected=0
+2026-09-01 23:16:20,685 | INFO | [drug_discovery 4/14] mode=explicit_agents; PubMed matches=38
+2026-09-01 23:16:20,685 | INFO | [drug_discovery 4/14] fetch=0-38 of 38
+2026-09-01 23:16:21,852 | INFO | [drug_discovery 4/14] unique kept=38, rejected=0
+2026-09-01 23:16:22,167 | INFO | [drug_discovery 5/14] mode=explicit_agents; PubMed matches=4
+2026-09-01 23:16:22,167 | INFO | [drug_discovery 5/14] fetch=0-4 of 4
+2026-09-01 23:16:22,601 | INFO | [drug_discovery 5/14] unique kept=4, rejected=0
+2026-09-01 23:16:22,875 | INFO | [drug_discovery 6/14] mode=explicit_agents; PubMed matches=1
+2026-09-01 23:16:22,876 | INFO | [drug_discovery 6/14] fetch=0-1 of 1
+2026-09-01 23:16:23,146 | INFO | [drug_discovery 6/14] unique kept=1, rejected=0
+2026-09-01 23:16:23,466 | INFO | [drug_discovery 7/14] mode=implicit_functional_agents; PubMed matches=14
+2026-09-01 23:16:23,466 | INFO | [drug_discovery 7/14] fetch=0-14 of 14
+2026-09-01 23:16:24,034 | INFO | [drug_discovery 7/14] unique kept=14, rejected=0
+2026-09-01 23:16:24,311 | INFO | [drug_discovery 8/14] mode=implicit_functional_agents; PubMed matches=4
+2026-09-01 23:16:24,311 | INFO | [drug_discovery 8/14] fetch=0-4 of 4
+2026-09-01 23:16:24,681 | INFO | [drug_discovery 8/14] unique kept=4, rejected=0
+2026-09-01 23:16:25,009 | INFO | [drug_discovery 9/14] mode=implicit_functional_agents; PubMed matches=1
+2026-09-01 23:16:25,010 | INFO | [drug_discovery 9/14] fetch=0-1 of 1
+2026-09-01 23:16:25,324 | INFO | [drug_discovery 9/14] unique kept=1, rejected=0
+2026-09-01 23:16:25,597 | INFO | [drug_discovery 10/14] mode=implicit_functional_agents; PubMed matches=1
+2026-09-01 23:16:25,598 | INFO | [drug_discovery 10/14] fetch=0-1 of 1
+2026-09-01 23:16:25,832 | INFO | [drug_discovery 10/14] unique kept=1, rejected=0
+2026-09-01 23:16:26,168 | INFO | [drug_discovery 11/14] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:16:26,168 | INFO | [drug_discovery 11/14] fetch=0-2 of 2
+2026-09-01 23:16:26,687 | INFO | [drug_discovery 11/14] unique kept=2, rejected=0
+2026-09-01 23:16:27,042 | INFO | [drug_discovery 12/14] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:16:27,042 | INFO | [drug_discovery 12/14] fetch=0-2 of 2
+2026-09-01 23:16:27,433 | INFO | [drug_discovery 12/14] unique kept=2, rejected=0
+2026-09-01 23:16:27,695 | INFO | [drug_discovery 13/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:27,695 | INFO | [drug_discovery 13/14] unique kept=0, rejected=0
+2026-09-01 23:16:27,958 | INFO | [drug_discovery 14/14] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:27,959 | INFO | [drug_discovery 14/14] unique kept=0, rejected=0
+2026-09-01 23:16:35,283 | INFO | drug_discovery: final unique kept=368, rejected after revalidation=0
+2026-09-01 23:16:35,286 | INFO | 
+DOMAIN 6/7: computational_pathology_bioimaging
+2026-09-01 23:16:35,286 | INFO | Small PubMed queries: 7
+2026-09-01 23:16:35,507 | INFO | [computational_pathology_bioimaging 1/7] mode=explicit_agents; PubMed matches=40
+2026-09-01 23:16:35,507 | INFO | [computational_pathology_bioimaging 1/7] fetch=0-40 of 40
+2026-09-01 23:16:36,662 | INFO | [computational_pathology_bioimaging 1/7] unique kept=40, rejected=0
+2026-09-01 23:16:36,961 | INFO | [computational_pathology_bioimaging 2/7] mode=explicit_agents; PubMed matches=28
+2026-09-01 23:16:36,961 | INFO | [computational_pathology_bioimaging 2/7] fetch=0-28 of 28
+2026-09-01 23:16:37,792 | INFO | [computational_pathology_bioimaging 2/7] unique kept=28, rejected=0
+2026-09-01 23:16:38,216 | INFO | [computational_pathology_bioimaging 3/7] mode=explicit_agents; PubMed matches=2
+2026-09-01 23:16:38,216 | INFO | [computational_pathology_bioimaging 3/7] fetch=0-2 of 2
+2026-09-01 23:16:38,583 | INFO | [computational_pathology_bioimaging 3/7] unique kept=1, rejected=1
+2026-09-01 23:16:38,908 | INFO | [computational_pathology_bioimaging 4/7] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:16:38,908 | INFO | [computational_pathology_bioimaging 4/7] fetch=0-2 of 2
+2026-09-01 23:16:39,259 | INFO | [computational_pathology_bioimaging 4/7] unique kept=2, rejected=0
+2026-09-01 23:16:39,541 | INFO | [computational_pathology_bioimaging 5/7] mode=implicit_functional_agents; PubMed matches=2
+2026-09-01 23:16:39,541 | INFO | [computational_pathology_bioimaging 5/7] fetch=0-2 of 2
+2026-09-01 23:16:39,879 | INFO | [computational_pathology_bioimaging 5/7] unique kept=2, rejected=0
+2026-09-01 23:16:40,203 | INFO | [computational_pathology_bioimaging 6/7] mode=implicit_functional_agents; PubMed matches=1
+2026-09-01 23:16:40,203 | INFO | [computational_pathology_bioimaging 6/7] fetch=0-1 of 1
+2026-09-01 23:16:40,511 | INFO | [computational_pathology_bioimaging 6/7] unique kept=1, rejected=0
+2026-09-01 23:16:40,783 | INFO | [computational_pathology_bioimaging 7/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:40,783 | INFO | [computational_pathology_bioimaging 7/7] unique kept=0, rejected=0
+2026-09-01 23:16:41,891 | INFO | computational_pathology_bioimaging: final unique kept=65, rejected after revalidation=0
+2026-09-01 23:16:41,893 | INFO | 
+DOMAIN 7/7: cross_domain_bioinformatics
+2026-09-01 23:16:41,893 | INFO | Small PubMed queries: 7
+2026-09-01 23:16:42,039 | INFO | [cross_domain_bioinformatics 1/7] mode=explicit_agents; PubMed matches=1
+2026-09-01 23:16:42,039 | INFO | [cross_domain_bioinformatics 1/7] fetch=0-1 of 1
+2026-09-01 23:16:42,391 | INFO | [cross_domain_bioinformatics 1/7] unique kept=1, rejected=0
+2026-09-01 23:16:42,652 | INFO | [cross_domain_bioinformatics 2/7] mode=explicit_agents; PubMed matches=2
+2026-09-01 23:16:42,652 | INFO | [cross_domain_bioinformatics 2/7] fetch=0-2 of 2
+2026-09-01 23:16:42,930 | INFO | [cross_domain_bioinformatics 2/7] unique kept=2, rejected=0
+2026-09-01 23:16:43,218 | INFO | [cross_domain_bioinformatics 3/7] mode=explicit_agents; PubMed matches=0
+2026-09-01 23:16:43,218 | INFO | [cross_domain_bioinformatics 3/7] unique kept=0, rejected=0
+2026-09-01 23:16:43,490 | INFO | [cross_domain_bioinformatics 4/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:43,490 | INFO | [cross_domain_bioinformatics 4/7] unique kept=0, rejected=0
+2026-09-01 23:16:43,803 | INFO | [cross_domain_bioinformatics 5/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:43,803 | INFO | [cross_domain_bioinformatics 5/7] unique kept=0, rejected=0
+2026-09-01 23:16:44,197 | INFO | [cross_domain_bioinformatics 6/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:44,197 | INFO | [cross_domain_bioinformatics 6/7] unique kept=0, rejected=0
+2026-09-01 23:16:44,453 | INFO | [cross_domain_bioinformatics 7/7] mode=implicit_functional_agents; PubMed matches=0
+2026-09-01 23:16:44,453 | INFO | [cross_domain_bioinformatics 7/7] unique kept=0, rejected=0
+2026-09-01 23:16:44,645 | INFO | cross_domain_bioinformatics: final unique kept=2, rejected after revalidation=0

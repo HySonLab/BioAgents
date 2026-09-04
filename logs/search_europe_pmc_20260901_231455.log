@@ -1,0 +1,7 @@
+2026-09-01 23:15:02,114 | INFO | genomics kept 235, rejected 0
+2026-09-01 23:15:09,320 | INFO | transcriptomics kept 148, rejected 1
+2026-09-01 23:15:11,719 | INFO | epigenomics kept 20, rejected 0
+2026-09-01 23:15:14,700 | INFO | proteomics kept 135, rejected 1
+2026-09-01 23:15:24,461 | INFO | drug_discovery kept 469, rejected 4
+2026-09-01 23:15:26,997 | INFO | computational_pathology_bioimaging kept 89, rejected 1
+2026-09-01 23:15:28,359 | INFO | cross_domain_bioinformatics kept 6, rejected 0

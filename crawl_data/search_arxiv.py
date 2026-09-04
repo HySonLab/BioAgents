@@ -23,7 +23,7 @@ from common import (
     stable_id,
     unique_terms,
     validate_for_query_domain,
-    write_rows,
+    write_rows,setup_logger
 )
 from http_helpers import request_with_retry
 
@@ -40,7 +40,7 @@ OUTPUT_FIELDS = list(BASE_FIELDS)
 if "published_date" not in OUTPUT_FIELDS:
     OUTPUT_FIELDS.append("published_date")
 
-
+logger = setup_logger('./logs/', 'search_arxiv')
 # ---------------------------------------------------------------------------
 # General helpers
 # ---------------------------------------------------------------------------
@@ -605,8 +605,7 @@ def run(config: dict[str, Any]) -> None:
         ):
             print(
                 f"DOMAIN {domain_index}/{total_domains} {domain}: "
-                "current configuration already completed, skipping",
-                flush=True,
+                "current configuration already completed, skipping"
             )
             continue
 
@@ -616,15 +615,13 @@ def run(config: dict[str, Any]) -> None:
             mode == "implicit_functional_agents" for mode, *_ in queries
         )
 
-        print(f"\nDOMAIN {domain_index}/{total_domains}: {domain}", flush=True)
-        print(
-            f"Date range: {date_from.isoformat()} to {date_until.isoformat()}",
-            flush=True,
+        logger.info(f"\nDOMAIN {domain_index}/{total_domains}: {domain}")
+        logger.info(
+            f"Date range: {date_from.isoformat()} to {date_until.isoformat()}"
         )
-        print(
+        logger.info(
             f"Small queries: {len(queries)} "
-            f"(explicit={explicit_count}, implicit={implicit_count})",
-            flush=True,
+            f"(explicit={explicit_count}, implicit={implicit_count})"
         )
 
         for sequence, (
@@ -650,10 +647,9 @@ def run(config: dict[str, Any]) -> None:
                 and chunk_kept.exists()
                 and chunk_rejected.exists()
             ):
-                print(
+                logger.info(
                     f"[{domain} {sequence}/{len(queries)}] "
-                    f"{query_mode}: completed chunk, skipping",
-                    flush=True,
+                    f"{query_mode}: completed chunk, skipping"
                 )
                 continue
 
@@ -661,10 +657,9 @@ def run(config: dict[str, Any]) -> None:
 
             try:
                 for start in range(0, maximum_records, batch_size):
-                    print(
+                    logger.info(
                         f"[{domain} {sequence}/{len(queries)}] "
-                        f"mode={query_mode}; start={start}",
-                        flush=True,
+                        f"mode={query_mode}; start={start}"
                     )
 
                     response = request_with_retry(
@@ -702,21 +697,19 @@ def run(config: dict[str, Any]) -> None:
 
                     chunk_rows.extend(page_rows)
 
-                    print(
+                    logger.info(
                         f"[{domain} {sequence}/{len(queries)}] "
                         f"raw dates={oldest_date}..{newest_date}; "
                         f"raw entries={raw_entry_count}; "
-                        f"in-range rows={len(page_rows)}",
-                        flush=True,
+                        f"in-range rows={len(page_rows)}"
                     )
 
                     # Stop only if the newest record on the page is already
                     # older than date_from. This means the whole page is old.
                     if newest_date is not None and newest_date < date_from:
-                        print(
+                        logger.info(
                             f"[{domain} {sequence}/{len(queries)}] "
-                            "entire page predates date_from; stopping query",
-                            flush=True,
+                            "entire page predates date_from; stopping query"
                         )
                         break
 
@@ -731,19 +724,18 @@ def run(config: dict[str, Any]) -> None:
                 write_rows(chunk_kept, kept_rows, OUTPUT_FIELDS)
                 write_rows(chunk_rejected, rejected_rows, OUTPUT_FIELDS)
 
-                print(
+                logger.info(
                     f"[{domain} {sequence}/{len(queries)}] "
                     f"unique kept={len(kept_rows)}, "
-                    f"unique rejected={len(rejected_rows)}",
-                    flush=True,
+                    f"unique rejected={len(rejected_rows)}"
                 )
                 time.sleep(settings["pause_seconds"])
 
             except KeyboardInterrupt:
-                print("\nInterrupted. Completed chunks are preserved.")
+                logger.info("\nInterrupted. Completed chunks are preserved.")
                 raise
             except Exception as error:
-                print(f"[WARNING] {search_id}: {error!r}", flush=True)
+                logger.info(f"[WARNING] {search_id}: {error!r}")
                 if not settings["continue_on_error"]:
                     raise
 
@@ -788,10 +780,9 @@ def run(config: dict[str, Any]) -> None:
         write_rows(final_rejected, rejected_rows, OUTPUT_FIELDS)
         fingerprint_path.write_text(fingerprint + "\n", encoding="utf-8")
 
-        print(
+        logger.info(
             f"\n{domain}: final unique kept={len(kept_rows)}, "
-            f"final unique rejected={len(rejected_rows)}",
-            flush=True,
+            f"final unique rejected={len(rejected_rows)}"
         )
 
 

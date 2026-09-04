@@ -5,6 +5,7 @@ from common import *
 from http_helpers import request_with_retry
 URL = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 
+logger = setup_logger('./logs/', 'search_europe_pmc')
 def run(config):
     ensure_dirs(); session = requests.Session()
     for domain, query in europe_domain_queries(config):
@@ -20,11 +21,14 @@ def run(config):
                 row.update(validate_for_query_domain(row, config, domain)); rows.append(row)
             next_cursor = data.get("nextCursorMark")
             if not items or not next_cursor or next_cursor == cursor: break
-            cursor = next_cursor; time.sleep(0.3)
+            cursor = next_cursor; time.sleep(20)
         rows = rows[:int(config["max_records_per_query"])]
         write_rows(RAW / "europe_pmc" / f"{domain}.csv", [x for x in rows if x["search_logic_keep"]])
         write_rows(RAW / "europe_pmc" / f"{domain}_rejected.csv", [x for x in rows if not x["search_logic_keep"]])
-        print(domain, "kept", sum(x["search_logic_keep"] for x in rows), "rejected", sum(not x["search_logic_keep"] for x in rows))
+        
+        
+        keep, rejected = sum(x["search_logic_keep"] for x in rows), sum(not x["search_logic_keep"] for x in rows)
+        logger.info(f"{domain} kept {keep}, rejected {rejected}")
 
 def main():
     parser = argparse.ArgumentParser(); parser.add_argument("--config", default=None); args = parser.parse_args(); run(load_config(args.config))

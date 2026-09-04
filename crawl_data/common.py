@@ -8,7 +8,10 @@ import re
 import unicodedata
 from pathlib import Path
 from typing import Any, Iterable, Iterator, Mapping
-
+import logging
+import os
+from datetime import datetime
+import yaml
 import pandas as pd
 
 ROOT = Path(os.environ.get("FEV_PROJECT_ROOT", Path(__file__).resolve().parents[1])).expanduser().resolve()
@@ -45,6 +48,28 @@ BASE_FIELDS = [
     "title_normalized",
 ]
 
+
+
+
+    
+def setup_logger(log_dir, exp_name):
+    os.makedirs(log_dir, exist_ok=True)
+
+    log_file = os.path.join(
+        log_dir,
+        f"{exp_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+    )
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s | %(levelname)s | %(message)s",
+        handlers=[
+            logging.FileHandler(log_file),
+            logging.StreamHandler()
+        ]
+    )
+
+    return logging.getLogger()
 
 def ensure_dirs() -> None:
     for path in (RAW, DATA, REPORTS, LOGS, CONFIG):

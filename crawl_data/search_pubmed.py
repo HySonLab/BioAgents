@@ -21,14 +21,14 @@ from common import (
     stable_id,
     unique_terms,
     validate_for_query_domain,
-    write_rows,
+    write_rows, setup_logger
 )
 from http_helpers import request_with_retry
 
 
 BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
-
+logger = setup_logger('./logs/', 'search_pubmed')
 def as_bool(value: Any) -> bool:
     if isinstance(value, bool):
         return value
@@ -409,19 +409,17 @@ def run(config: dict[str, Any]) -> None:
         chunk_directory.mkdir(parents=True, exist_ok=True)
 
         if resume and final_kept.exists() and final_rejected.exists():
-            print(
+            logger.info(
                 f"DOMAIN {domain_index}/{len(config['domain_order'])} "
-                f"{domain}: completed, skipping",
-                flush=True,
+                f"{domain}: completed, skipping"
             )
             continue
 
         queries = list(small_queries(config, domain))
-        print(
-            f"\nDOMAIN {domain_index}/{len(config['domain_order'])}: {domain}",
-            flush=True,
+        logger.info(
+                            f"\nDOMAIN {domain_index}/{len(config['domain_order'])}: {domain}"
         )
-        print(f"Small PubMed queries: {len(queries)}", flush=True)
+        logger.info(f"Small PubMed queries: {len(queries)}")
 
         for query_index, (query_mode, sequence, query) in enumerate(
             queries,
@@ -439,10 +437,9 @@ def run(config: dict[str, Any]) -> None:
             chunk_rejected = chunk_directory / f"{search_id}_rejected.csv"
 
             if resume and chunk_kept.exists() and chunk_rejected.exists():
-                print(
+                logger.info(
                     f"[{domain} {query_index}/{len(queries)}] "
-                    "completed chunk, skipping",
-                    flush=True,
+                    "completed chunk, skipping"
                 )
                 continue
 
@@ -479,10 +476,9 @@ def run(config: dict[str, Any]) -> None:
                 query_key = clean(result.get("querykey"))
                 web_env = clean(result.get("webenv"))
 
-                print(
+                logger.info(
                     f"[{domain} {query_index}/{len(queries)}] "
-                    f"mode={query_mode}; PubMed matches={total}",
-                    flush=True,
+                    f"mode={query_mode}; PubMed matches={total}"
                 )
 
                 if total and (not query_key or not web_env):
@@ -492,10 +488,9 @@ def run(config: dict[str, Any]) -> None:
 
                 for start in range(0, total, fetch_batch_size):
                     end = min(start + fetch_batch_size, total)
-                    print(
+                    logger.info(
                         f"[{domain} {query_index}/{len(queries)}] "
-                        f"fetch={start}-{end} of {total}",
-                        flush=True,
+                        f"fetch={start}-{end} of {total}"
                     )
 
                     fetch_response = request_with_retry(
@@ -535,19 +530,18 @@ def run(config: dict[str, Any]) -> None:
                 write_rows(chunk_kept, kept_rows, BASE_FIELDS)
                 write_rows(chunk_rejected, rejected_rows, BASE_FIELDS)
 
-                print(
+                logger.info(
                     f"[{domain} {query_index}/{len(queries)}] "
                     f"unique kept={len(kept_rows)}, "
-                    f"rejected={len(rejected_rows)}",
-                    flush=True,
+                    f"rejected={len(rejected_rows)}"
                 )
                 time.sleep(pause_seconds)
 
             except KeyboardInterrupt:
-                print("\nInterrupted. Completed chunks are preserved.")
+                logger.info("\nInterrupted. Completed chunks are preserved.")
                 raise
             except Exception as error:
-                print(f"[WARNING] {search_id}: {error!r}", flush=True)
+                logger.info(f"[WARNING] {search_id}: {error!r}")
                 if not continue_on_error:
                     raise
 
@@ -568,10 +562,9 @@ def run(config: dict[str, Any]) -> None:
         write_rows(final_kept, kept_rows, BASE_FIELDS)
         write_rows(final_rejected, rejected_rows, BASE_FIELDS)
 
-        print(
-            f"{domain}: final unique kept={len(kept_rows)}, "
-            f"rejected after revalidation={len(rejected_rows)}",
-            flush=True,
+        logger.info(
+                            f"{domain}: final unique kept={len(kept_rows)}, "
+            f"rejected after revalidation={len(rejected_rows)}"
         )
 
 
