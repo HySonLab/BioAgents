@@ -1,0 +1,8 @@
+title,primary_category
+GeneAgent: self-verification language agent for gene-set analysis using domain databases,genomics
+CellAgent: An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis,transcriptomics
+TransAgent: Dynamizing Transcriptional Regulation Analysis via Multi-omics-Aware AI Agent,epigenomics
+ProtAgents: protein discovery via large language model multi-agent collaborations combining physics and machine learning,proteomics
+PharmAgents: Building a Virtual Pharma with Large Language Model Agents,drug_discovery
+WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis,computational_pathology_bioimaging
+Biomni: A General-Purpose Biomedical AI Agent,cross_domain_bioinformatics
