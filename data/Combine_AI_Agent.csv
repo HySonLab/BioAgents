@@ -1,0 +1,364 @@
+title,primary_category
+Accelerating primer design for amplicon sequencing using large language model-powered agents,genomics
+AgentGC: Evolutionary Learning-based Lossless Compression for Genomics Data with LLM-driven Multiple Agent,genomics
+An agentic AI system for automated pharmacogenomic recommendation generation,genomics
+Autonomous computational prioritisation of colorectal cancer vulnerabilities via multi-scale AI swarms,drug_discovery
+"biomeStat: Using Agentic AI for Scalable Genomic Epidemiology Demonstrated Through End-to-End Analysis of 1,000 Asian Dengue Virus Genomes",genomics
+BOLE: A Knowledge-Enhanced Multi-Agent Framework for Intelligent Genomic Breeding,genomics
+CoNVict: An Agentic AI System for Copy Number Variation Prioritization in Rare Disease Diagnosis,genomics
+CRISPR-GPT for agentic automation of gene-editing experiments,genomics
+Intelligent tool orchestration for rapid mechanistic model prototyping: MCP servers as AI-biology interfaces,cross_domain_bioinformatics
+KBase Research Agent: Automated Multi-Agent Workflow Construction for Reproducible Genome Analysis,genomics
+MechAInistic: An LLM-guided Multi-Agent System for Reasoning over Genome-Scale Constraint-Based Metabolic Models,drug_discovery
+OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology Knowledge Bases from Scientific Literature,genomics
+Optimizing genomics-aware clinical agents in precision oncology,drug_discovery
+PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery,transcriptomics
+PlantAI: A Multi-Agent System for Plant Functional Genomics Analysis and Biological Knowledge Interpretation,transcriptomics
+Process-Supervised Multi-Agent Reinforcement Learning for Reliable Clinical Reasoning,genomics
+SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction,computational_pathology_bioimaging
+Self-Driving Datasets: From 20 Million Papers to Nuanced Biomedical Knowledge at Scale,cross_domain_bioinformatics
+A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data,genomics
+An LLM-Driven Multi-Agent Debate System for Mendelian Diseases,genomics
+BioAgents: Bridging the gap in bioinformatics analysis with multi-agent systems,cross_domain_bioinformatics
+DIVERGE v4: A Platform for Large-Scale Analysis of Functional Divergence Across Multi-Gene Families,proteomics
+GeneAgent: self-verification language agent for gene-set analysis using domain databases,genomics
+GeneWhisperer: Enhancing manual genome annotation with large language models,genomics
+gffutilsAI: An AI-Agent for Interactive Genomic Feature Exploration in GFF files,genomics
+A Versatile AI Agent for Rare Disease Diagnosis and Risk Gene Prioritization,genomics
+HypoGeneAgent: A Hypothesis Language Agent for Gene-Set Cluster Resolution Selection Using Perturb-seq Datasets,transcriptomics
+IAN: An Intelligent System for Omics Data Analysis and Discovery,transcriptomics
+MRAgent: an LLM-based automated agent for causal knowledge discovery in disease via Mendelian randomization,genomics
+PerTurboAgent: An LLM-based Agent for Designing Iterative Perturb-Seq Experiments,transcriptomics
+SynthCraft: An AI partner for synthetic data generation to support data access and augmentation in healthcare,cross_domain_bioinformatics
+Development and validation of an autonomous artificial intelligence agent for clinical decision-making in oncology,drug_discovery
+BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments,genomics
+AutoZyme: An Autonomous Agentic Framework to Optimize Bioinformatics Software,cross_domain_bioinformatics
+Cross-Species Aging Knowledge Integration into Agentic AI Platform Uncovers Conserved Mechanisms,cross_domain_bioinformatics
+Eubiota: Modular Agentic AI for Autonomous Discovery in the Gut Microbiome,cross_domain_bioinformatics
+From Single to Multi-Agent Reasoning: Advancing GeneGPT for Genomics QA,genomics
+GeneGenie: enhancing biomedical question-answering with agentic graphs,genomics
+GenomeHarness: Harnessing AI Agents for Reliable Adaptation of Genome Language Models,genomics
+GGBound: A Genome-Grounded Agent for Microbial Life-Boundary Prediction,genomics
+Making large language models reliable data science programming copilots for biomedical research,cross_domain_bioinformatics
+RareCollab: an LLM-powered framework for multimodal reasoning in Mendelian disease diagnosis,genomics
+Trustworthy agentic genomics through versioned skill libraries,genomics
+Beyond GeneGPT: A Multi-Agent Architecture with Open-Source LLMs for Enhanced Genomic Question Answering,genomics
+BioRAGent: natural language biomedical querying with retrieval-augmented multiagent systems,genomics
+Nano Bio-Agents (NBA): Small Language Model Agents for Genomics,genomics
+A Conversational Multi-Agent AI System for Integrated Multi-Omics Analysis and Biomedical Discovery,transcriptomics
+A multi-agent system for automating scientific discovery,drug_discovery
+ACCREDIT: A Quality-Aware Agentic Engine for Cell-resolved Cross-modal Image Registration with Dynamic Iterative Tuning,computational_pathology_bioimaging
+"Autonomous multimodal agents enable transparent, spatiotemporal reconstruction of immune dynamics in pancreatic cancer progression",computational_pathology_bioimaging
+"Autonomous Spatial Transcriptomics Analysis (ASTA): Demonstrating Performance Improvements through Clustering, Biological Annotation, and AI-Driven Discovery",transcriptomics
+BIOGEN: evidence-grounded multi-agent reasoning framework for transcriptomic interpretation in antimicrobial resistance,transcriptomics
+BioPathfinder: Evidence-guided multi-agent platform enables hypothesis discovery for CAR-T engineering,transcriptomics
+CellMaster: Collaborative Cell Type Annotation in Single-Cell Analysis,transcriptomics
+CellPilot: an agentic framework that pilots small language models through autonomous single-cell annotation,transcriptomics
+Discovery of Disease Relationships via Transcriptomic Signature Analysis Powered by Agentic AI,transcriptomics
+Disease as Hysteresis: Agentic AI and VAE Latent Space Analysis Uncover Irreversible State Transitions in Periodontal Tissue,transcriptomics
+Evaluating agentic AI for biological discovery in autonomous and copilot settings,transcriptomics
+HarmonyCell: Automating Single-Cell Perturbation Modeling under Semantic and Distribution Shifts,transcriptomics
+MetaMuse: A Multi-Agent AI System for Biomedical Metadata Curation and Harmonization,cross_domain_bioinformatics
+Multiregional single-cell profiling reveals shared and specialized cellular vulnerability in Alzheimer’s disease,transcriptomics
+OMICX: An AI-powered web platform for integrative analysis of multi-condition single-cell transcriptomics data,transcriptomics
+OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery,cross_domain_bioinformatics
+PersonaAI: An Interactive Agentic-AI Framework for Autonomous Hypothesis Generation and Validation in Aging,transcriptomics
+Potato Agent: AI-Driven Data and Knowledge Exploration on an Agent-Ready Potato Multi-Omics Platform,genomics
+scIsoAgent enables autonomous isoform-resolved characterization and sequence-informed interpretation of long-read single-cell transcriptomes,transcriptomics
+scMarkerAgent: An LLM Evidence Agent-based Cell Marker Atlas,transcriptomics
+SCTA: An Agentic Framework for Stable and Interpretable Target Gene Discovery from Single-Cell RNA Sequencing,transcriptomics
+SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis,transcriptomics
+STAnalyzer: Transparent Spatial Transcriptomics Analysis via an Agentic Architecture,transcriptomics
+The Virtual Biotech: A Multi-Agent AI Framework for Therapeutic Discovery and Development,drug_discovery
+Towards Autonomous Mechanistic Reasoning in Virtual Cells,transcriptomics
+TSASSISTANT: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment,drug_discovery
+Universal agentic probe design for imaging-based spatial-omics,computational_pathology_bioimaging
+Virtual-cell verification enables self-auditing AI discovery for immune rejuvenation,drug_discovery
+A co-evolving agentic AI system for medical imaging analysis,computational_pathology_bioimaging
+Agentic Lab: An Agentic-physical AI system for cell and organoid experimentation and manufacturing,cross_domain_bioinformatics
+An agentic AI framework for ingestion and standardization of single-cell RNA-seq data analysis,transcriptomics
+AtlasAgent: Vision language model and Agent-guided Framework for Evaluation of Atlas-scale Single-cell Integration,transcriptomics
+Automatic biomarker discovery and enrichment with BRAD,transcriptomics
+Autonomous AI Agents Discover Aging Interventions from Millions of Molecular Profiles,transcriptomics
+A Brain Cell Type Resource Created by Large Language Models and a Multi-Agent AI System for Collaborative Community Annotation,transcriptomics
+CELLFORGE: Agentic Design of Virtual Cell Models,transcriptomics
+Development of an Agentic AI Model for NGS Downstream Analysis Targeting Researchers with Limited Biological Background,transcriptomics
+"Guided multi-agent AI invents highly accurate, uncertainty-aware transcriptomic aging clocks",transcriptomics
+Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI Agents,cross_domain_bioinformatics
+PhenoGraph: A Multi-Agent Framework for Phenotype-driven Discovery in Spatial Transcriptomics Data Augmented with Knowledge Graphs,transcriptomics
+scAgent: Universal Single-Cell Annotation via a LLM Agent,transcriptomics
+"scBaseCount: an AI agent-curated, uniformly processed, and autonomously updated single cell data repository",transcriptomics
+Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo,transcriptomics
+SpatialAgent: An autonomous AI agent for spatial biology,transcriptomics
+Standardizing RNA-seq Analysis of Fungal Pathogens Using BRC-Analytics and Agentic AI: A Candidozyma auris Case Study,transcriptomics
+TransAgent: Dynamizing Transcriptional Regulation Analysis via Multi-omics-Aware AI Agent,epigenomics
+"WSInsight: a cloud-native, agent-callable platform for single-cell whole-slide pathology",computational_pathology_bioimaging
+An AI Agent for Fully Automated Multi-Omic Analyses,cross_domain_bioinformatics
+Replicating a High-Impact Scientific Publication Using Systems of Large Language Models,transcriptomics
+Automating scientific annotations for open transcriptomic profiles via multi-stage agents,transcriptomics
+CellVoyager: AI CompBio agent generates new insights by autonomously analyzing biological data,transcriptomics
+ELISA: An Interpretable Hybrid Generative AI Agent for Expression-Grounded Discovery in Single-Cell Genomics,transcriptomics
+EnsAgent: a tool-ensemble multiple Agent system for robust annotation in spatial transcriptomics,transcriptomics
+MyeGPT: an AI agent for Multiple Myeloma,genomics
+"OCellus: A Language-Model Framework for Single-Cell, Spatial, and Perturbation Biology with Natural-Language Reasoning",transcriptomics
+OmicOS: A Comprehensive Omics Ecosystem Infrastructure and Agent System for the AI Era,cross_domain_bioinformatics
+"Omics Data Discovery Agents: Agent-Supported Retrieval, Reanalysis, and Synthesis of Published Omics Data",proteomics
+Pipette: Encoding scientific literature into an executable Skill Graph for multi-agent bioinformatics,cross_domain_bioinformatics
+Progressive Multi-Agent Reasoning for Biological Perturbation Prediction,transcriptomics
+scChat: A Large Language Model-Powered Co-Pilot for Contextualized Single-Cell RNA Sequencing Analysis.,transcriptomics
+SIA: Self Improving AI with Harness & Weight Updates,transcriptomics
+spatiAlytica: Viewer-Grounded Multimodal Agentic System for Interactive Spatial Omics Analysis.,transcriptomics
+STAT: A multi-agent framework for integrated and interactive spatial transcriptomics analysis,transcriptomics
+TCellAlign: Cross-study T-cell Populations Alignment with Nomenclature-Guided Multi-Agent Workflow,transcriptomics
+Agent SPI-WSI: In context learning for computationally spatial pathway inferring on whole slide histopathology images conditioned on bulk RNA sequencing using pathologist in the loop,computational_pathology_bioimaging
+Can Lightweight LLM Agents Improve Spatial Transcriptomics Annotation?,transcriptomics
+GenoMAS: A Multi-Agent Framework for Scientific Discovery via Code-Driven Gene Expression Analysis,transcriptomics
+Multi-agent AI enables evidence-based cell annotation in single-cell transcriptomics,transcriptomics
+The Station: An Open-World Environment for AI-Driven Discovery,cross_domain_bioinformatics
+TusoAI: Agentic Optimization for Scientific Methods,genomics
+When AI Does Science: Evaluating the Autonomous AI Scientist KOSMOS in Radiation Biology,transcriptomics
+CellAgent: An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis,transcriptomics
+GenoTEX: An LLM Agent Benchmark for Automated Gene Expression Data Analysis,transcriptomics
+Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,cross_domain_bioinformatics
+MethylCurate: Tool for Dataset Curation and Epigenetic Aging Clock Evaluation,epigenomics
+AgentFold: Closed-Loop Agentic Search for Protein Folding Model Design,proteomics
+Agentic AI platforms for autonomous training and rule induction of human-human and virus-human protein-protein interactions,proteomics
+Agentic AI uncovers conserved cross-tissue protein co-abundance programs inaccessible to single-dataset analysis,proteomics
+An autonomous LLM-agent platform for computational binder design and conjugation-aware prioritization of antibody–drug conjugates,drug_discovery
+AutoBinder Agent: An MCP-Based Agent for End-to-End Protein Binder Design,drug_discovery
+Automated extraction and optimization of protein purification protocols using multi-agent large language models.,proteomics
+"CascadeMAP: Autonomous Closed-loop Optimization of Enzyme Cascades via Microfluidics, Machine Learning and Agentic AI",proteomics
+Inhibition of LONP1 in prostate cancer: bibliometrics-guided target screening and AI-driven antibody design.,drug_discovery
+LLM Agent Based Protein Function Prediction,proteomics
+Multimodal AI agents for capturing and sharing proteomics laboratory practice.,proteomics
+ORION: An agentic reasoning construct for the analysis of complex human immune profiling,proteomics
+PhaSepDB 3.0: a comprehensive knowledgebase of phase separation-related proteins from AI-assisted curation,proteomics
+PRISM: A High-Throughput Simulation Infrastructure for CADD Agents,drug_discovery
+Protein Design with Agent Rosetta: A Case Study for Specialized Scientific Agents,proteomics
+ProtoCycle: Reflective Tool-Augmented Planning for Text-Guided Protein Design,proteomics
+Rethinking Scientific Discovery in the Agentic Era,cross_domain_bioinformatics
+"Federation Is Nearly Free, Reasoning Is Not: Tradeoffs for AI Co-Scientists in Protein Characterization Workflows",proteomics
+Using a GPT-5-driven autonomous lab to optimize the cost and titer of cell-free protein synthesis,proteomics
+Valhalla: A Layered Knowledge-State and Service-Governance Framework for Long-Term Scientific Knowledge Work,cross_domain_bioinformatics
+Accelerating Scientific Discovery with Autonomous Goal-evolving Agents,drug_discovery
+Autonomous Discovery of Functional Random Heteropolymer Blends through Evolutionary Formulation Optimization,proteomics
+Beyond Protein Language Models: An Agentic LLM Framework for Mechanistic Enzyme Design,proteomics
+Connecting Large Language Model Agent to High Performance Computing Resource,cross_domain_bioinformatics
+De novo design of protein-binding aptamers through deep reinforcement learning assembly of nucleic acid fragments,drug_discovery
+DrBioRight 2.0: an LLM-powered bioinformatics chatbot for large-scale cancer functional proteomics analysis,proteomics
+IGDA: Interactive Graph Discovery through Large Language Model Agents,cross_domain_bioinformatics
+LongevityLLM: A Function-Driven AI Agent for End-to-End Protein and Aging Research,cross_domain_bioinformatics
+Multimodal AI agents for capturing and sharing laboratory practice,proteomics
+ProtChat: An AI Multi-Agent for Automated Protein Analysis Leveraging GPT-4 and Protein Language Model,proteomics
+Sparks: Multi-Agent Artificial Intelligence Model Discovers Protein Design Principles,proteomics
+Swarms of Large Language Model Agents for Protein Sequence Design with Experimental Validation,proteomics
+The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies,drug_discovery
+Automating Exploratory Proteomics Research via Language Models,proteomics
+AutoProteinEngine: A Large Language Model Driven Agent Framework for Multimodal AutoML in Protein Engineering,proteomics
+Aviary: training language agents on challenging scientific tasks,cross_domain_bioinformatics
+Integrating MHC Class I visibility targets into the ProteinMPNN protein design process,
+ProtAgents: protein discovery via large language model multi-agent collaborations combining physics and machine learning,proteomics
+Protein-Protein Interaction Networks Derived from Classical and Machine Learning-Based Natural Language Processing Tools,
+Self-driving laboratories to autonomously navigate the protein fitness landscape,proteomics
+TourSynbio-Search: A Large Language Model Driven Agent Framework for Unified Search Method for Protein Engineering,proteomics
+Validation of an LLM-based Multi-Agent Framework for Protein Engineering in Dry Lab and Wet Lab,proteomics
+Advancing Protein Design via Multi-Agent Reinforcement Learning with Pareto-Based Collaborative Optimization,proteomics
+AtlasAI: Multi-Agent Reasoning for Knowledge Discovery in the Human Protein Atlas,proteomics
+DynaMate: An Autonomous Agent for Protein-Ligand Molecular Dynamics Simulations,drug_discovery
+EnzySeek: Efficient Exploration of Enzyme Reaction Pathways Using AI Agents,proteomics
+From Residuals to Reasons: LLM-Guided Mechanism Inference from Tabular Data,cross_domain_bioinformatics
+MutexaGPT: An Intuition-to-Design Translator for Physics-based Enzyme Engineering,proteomics
+QFoldAgent: An Autonomous Quantum Optimization Multi-Agent System for Protein Structure Prediction,proteomics
+Self-evolving AI agents for protein discovery and directed evolution,proteomics
+SP-Mind: An Autonomous Reasoning Agent for Spatial Proteomics Analysis,proteomics
+The Little Scientist: LLM Agent-Driven Discovery via the Scientific Method,cross_domain_bioinformatics
+Autonomous Liquid-handling Robotics Scripting for Accessible and Responsible Protein Engineering,proteomics
+BioLab: End-to-End Autonomous Life Sciences Research with Multi-Agents System Integrating Biological Foundation Models,cross_domain_bioinformatics
+PRIME: A Multi-Agent Environment for Orchestrating Dynamic Computational Workflows in Protein Engineerings,proteomics
+Qimai: a multi-agent framework for zero-shot DNA-protein interaction prediction,genomics
+SciToolAgent: A Knowledge Graph-Driven Scientific Agent for Multi-Tool Integration,cross_domain_bioinformatics
+STELLA: Towards a Biomedical World Model with Self-Evolving Multimodal Agents,cross_domain_bioinformatics
+TourSynbio: A Multi-Modal Large Model and Agent Framework to Bridge Text and Protein Sequences for Protein Engineering,proteomics
+MAS2HP: A Multi Agent System to Predict Protein Structure in 2D HP model,proteomics
+A large-scale concordance study of toxicity findings across preclinical species and humans for small molecules and biologics,drug_discovery
+A Modular Agentic Framework for Synthetically Constrained Multi-Objective Hit-to-Lead Optimization,drug_discovery
+A Multi-Agent Framework for Interpreting Multivariate Physiological Time Series,
+Accelerating scientific discovery with Co-Scientist,drug_discovery
+Agentic AI for Structural Elucidation and Discovery of Drug Metabolites from Mass Spectrometry Data,drug_discovery
+AI-powered TargetMap: Enabling system-level target discovery through full-path reasoning on a unified knowledge graph,drug_discovery
+ALEX: Automatic Language Explanations for Interpreting Treatment Effects via Multi-Agents,drug_discovery
+"An Agentic Platform for Drug Repurposing Unified across Molecular, Phenotypic, and Clinical Scales",drug_discovery
+AutoScientists: Self-Organizing Agent Teams for Long-Running Scientific Experimentation,cross_domain_bioinformatics
+BiOmics: A Foundational Agent for Grounded and Autonomous Multi-omics Interpretation,cross_domain_bioinformatics
+CellSwarm: LLM-Driven Cell Agents Recapitulate Tumor Microenvironment Dynamics and Sense Indirect Genetic Perturbations,cross_domain_bioinformatics
+Cirrina: LLM-driven pharmacological reasoning agent enables preclinical CNS drug evaluation,drug_discovery
+ClinicalReTrial: Clinical Trial Redesign with Self-Evolving Agents,drug_discovery
+Closing the Prior-Posterior Loop: Self-Reflective Molecular Design with Analysis-Driven LLM Iteration,drug_discovery
+Contextual Invertible World Models: A Neuro-Symbolic Agentic Framework for Colorectal Cancer Drug Response,drug_discovery
+DeepRoot: A KG-Coordinated Multi-Agent System for Therapeutic Reasoning over Historical Medical Texts,drug_discovery
+DeepTCM1.0: A Multi-Expert AI Agent for Deciphering Mechanisms of Chinese Herbal Formulae Based on General Large Language Models,drug_discovery
+DrugSAGE: Self-evolving Agent Experience for Efficient State-of-the-Art Drug Discovery,drug_discovery
+EcoXAI: Autonomous Agentic Ecosystem for Explainable Artificial Intelligence and Biomedical Discovery,cross_domain_bioinformatics
+Epistemic Blinding: An Inference-Time Protocol for Auditing Prior Contamination in LLM-Assisted Analysis,drug_discovery
+From Literature to Hypotheses: An AI Co-Scientist System for Biomarker-Guided Drug Combination Hypothesis Generation,drug_discovery
+Generative exploration of fragment-based chemical space via large language models enables the discovery of potent leads for targets lacking bioactive ligands,drug_discovery
+GPAS: an online AI system for rapid and accurate pathogen identification and LLM-based interpretation,genomics
+Human-supervised Agentic AI for Hypothesis Generation and Experimental Assistance in Drug Repurposing,drug_discovery
+Knowledgeable Language Models as Black-Box Optimizers for Personalized Medicine,drug_discovery
+Large Language Model Agent for Modular Task Execution in Drug Discovery,drug_discovery
+Latent-Y: A Lab-Validated Autonomous Agent for De Novo Drug Design,drug_discovery
+Learning Clinical-Trial Strategy: Offline Policy Training for Decision Agents,drug_discovery
+LipoAgent: Coordinating Fine-Tuned LLM Agents for Safer Lipid Design,drug_discovery
+MARBLE: Multi-Agent Reasoning for Bioinformatics Learning and Evolution,cross_domain_bioinformatics
+MicroGrowAgents: An Agentic AI System for Microbial Cultivation Engineering,cross_domain_bioinformatics
+Prompt-to-Pill: Multi-Agent Drug Discovery and Clinical Simulation Pipeline.,drug_discovery
+Purely Agent-Driven Black-Box Optimization for Biological Design,drug_discovery
+Reinforcement Learning with LLM-Guided Action Spaces for Synthesizable Lead Optimization,drug_discovery
+Rhizome OS-1: Rhizome's Semi-Autonomous Operating System for Small Molecule Drug Discovery,drug_discovery
+Robotic perturbation proteomics and AI agents enable scalable drug mechanism discovery.,proteomics
+"SEISMO: Explanation-Aware, Trajectory-Conditioned LLM Agents for Sample-Efficient Molecular Optimisation",drug_discovery
+Site4Drug: Predicting Drug-Binding Target Sites with an AI Agent,drug_discovery
+Talk2QSP: Deriving Executable Scenarios from Unstructured Literature via Human-in-the-Loop Agents,drug_discovery
+ToolMol: Evolutionary Agentic Framework for Multi-objective Drug Discovery,drug_discovery
+Towards a Medical AI Scientist,cross_domain_bioinformatics
+<i>Transplant-Agents</i>  : A Multi-Agent Artificial Intelligence Framework for Reproducibility Assessment of Post-Transplant Risk Prediction and Rejection Biomarkers,cross_domain_bioinformatics
+Accelerating Drug Discovery Through Agentic AI: A Multi-Agent Approach to Laboratory Automation in the DMTA Cycle,drug_discovery
+Agentic RAG-Driven Multi-Omics Analysis for PI3K/AKT Pathway Deregulation in Precision Medicine,cross_domain_bioinformatics
+An Auditable Agent Platform For Automated Molecular Optimisation,drug_discovery
+AUTOCT: Automating Interpretable Clinical Trial Prediction with LLM Agents,drug_discovery
+Automating AI Discovery for Biomedicine Through Knowledge Graphs and Large Language Models Agents,cross_domain_bioinformatics
+"Bio AI Agent: A Multi-Agent Artificial Intelligence System for Autonomous CAR-T Cell Therapy Development with Integrated Target Discovery, Toxicity Prediction, and Rational Molecular Design",drug_discovery
+BioChemAIgent: An AI-driven Protein Modeling and Docking Framework for Structure-Based Drug Discovery,drug_discovery
+BioScientist Agent: Designing LLM-Biomedical Agents with KG-Augmented RL Reasoning Modules for Drug Repurposing and Mechanistic of Action Elucidation,drug_discovery
+Conversational no-code and multi-agentic disease module identification and drug repurposing prediction with ChatDRex,drug_discovery
+"Democratizing Drug Discovery with an Orchestrated, Knowledge-Driven Multi-Agent Team for User-Guided Therapeutic Design",drug_discovery
+Drug repurposing for Alzheimer's disease using a graph-of-thoughts reasoning approach,drug_discovery
+DrugAgent: Reliable Multi-Agent Integration of Conflicting Biomedical Evidence for Drug-Target Interaction Assessment,drug_discovery
+Explainable Reasoning Path Inference of Anti-Cancer Drug Sensitivity on Genomic Knowledge Graph via Macro-Micro Agent Collaborative Reinforcement Learning,drug_discovery
+Exploring Modularity of Agentic Systems for Drug Discovery,drug_discovery
+Fleming: An AI Agent for Antibiotic Design for Mycobacterium tuberculosis,drug_discovery
+FRAGMENTA: End-to-end Fragmentation-based Generative Model with Agentic Tuning for Drug Lead Optimization,drug_discovery
+HypoChainer: A Collaborative System Combining LLMs and Knowledge Graphs for Hypothesis-Driven Scientific Discovery,drug_discovery
+KODA: An Agentic Framework for KEGG Orthology-Driven Discovery of Antimicrobial Drug Targets in Gut Microbiome,drug_discovery
+LIDDIA: Language-based Intelligent Drug Discovery Agent,drug_discovery
+LLMs and AI Life Models for Traditional Chinese Medicine-derived Geroprotector Formulation,drug_discovery
+MolAgent: Biomolecular Property Estimation in the Agentic Era,drug_discovery
+Multi agent large language models for biomedical hypothesis generation in drug combination discovery,drug_discovery
+OmniCellAgent: Towards AI Co-Scientists for Scientific Discovery in Precision Medicine,transcriptomics
+Optimizing Life Sciences Agents in Real-Time using Reinforcement Learning,cross_domain_bioinformatics
+PharmAgents: Building a Virtual Pharma with Large Language Model Agents,drug_discovery
+POLO: Preference-Guided Multi-Turn Reinforcement Learning for Lead Optimization,drug_discovery
+QSP-Copilot: An AI-Augmented Platform for Accelerating Quantitative Systems Pharmacology Model Development,drug_discovery
+RAG-Enhanced Collaborative LLM Agents for Drug Discovery,drug_discovery
+RareAgent: Self-Evolving Reasoning for Drug Repurposing in Rare Diseases,drug_discovery
+SelfAI: A self-directed framework for long-horizon scientific discovery,cross_domain_bioinformatics
+Talk2Biomodels: AI agent-based open-source LLM initiative for kinetic biological models,cross_domain_bioinformatics
+Technical Implementation of Tippy: Multi-Agent Architecture and System Design for Drug Discovery Laboratory Automation,drug_discovery
+The Denario project: Deep knowledge AI agents for scientific discovery,cross_domain_bioinformatics
+VALID-Mol: a Systematic Framework for Validated LLM-Assisted Molecular Design,drug_discovery
+DrugAgent: Automating AI-aided Drug Discovery Programming through LLM Multi-Agent Collaboration,drug_discovery
+dZiner: Rational Inverse Design of Materials with AI Agents,drug_discovery
+Human-in-the-loop active learning for goal-oriented molecule generation,drug_discovery
+MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance,drug_discovery
+Revolutionizing Biomarker Discovery: Leveraging Generative AI for Bio-Knowledge-Embedded Continuous Space Exploration,cross_domain_bioinformatics
+Utilizing Large Language Models for Natural Interface to Pharmacology Databases,drug_discovery
+A multi-agent molecular optimization framework leads to a rapid-recovery intravenous anesthetic candidate with an improved safety margin,drug_discovery
+AgenticPosesRanker: An Agentic AI Framework for Physically Grounded Ranking of Protein-Ligand Docking Poses,drug_discovery
+Agentomics: an agentic system that autonomously develops novel state-of-the-art solutions for biomedical machine learning tasks,cross_domain_bioinformatics
+An AI-agent-orchestrated grey-box Transformer framework for sparse pharmacokinetic curve reconstruction and pharmacometric model initialization,drug_discovery
+An explainable hypothesis-driven approach to Drug-Induced Liver Injury with HADES,drug_discovery
+BioResearcher: Scenario-Guided Multi-Agent for Translational Medicine,cross_domain_bioinformatics
+DDIAgents: Mechanism-Conditioned Context Flow for Drug-Drug Interaction Prediction,drug_discovery
+DeepER-Med: Advancing Deep Evidence-Based Research in Medicine Through Agentic AI,cross_domain_bioinformatics
+DiscoVerse: multi-agent pharmaceutical co-scientist for traceable drug discovery and reverse translation,drug_discovery
+irAE.AI: AI-powered exploration of real-world immune-related adverse events,drug_discovery
+KG-Orchestra: An Open-Source Multi-Agent Framework for Evidence-Based Biomedical Knowledge Graphs Enrichment,cross_domain_bioinformatics
+"KnowMol: A Knowledge-Guided Multi-Agent Framework for Interpretable Drug–Target Interaction Prediction, Validated in PRMT3-Targeted NAFLD Therapy",drug_discovery
+MacAma: Multi-AI Agent as a Co-Scientist for Automated Meta-Analysis,cross_domain_bioinformatics
+Medea: An AI agent for therapeutic reasoning across biological contexts,cross_domain_bioinformatics
+"MolClaw: An Autonomous Agent with Hierarchical Skills for Drug Molecule Evaluation, Screening, and Optimization",drug_discovery
+MolLingo: Molecule-Native Representations for LLM-Powered Scientific Agents,drug_discovery
+Mozi: Governed Autonomy for Drug Discovery LLM Agents,drug_discovery
+Physics beats diffusion: Agentic AI-driven virtual screening benchmark on a GPCR target,drug_discovery
+PKGPT: Expert-Orchestrated Recursive LLM Agent for Automated NONMEM PopPK Modeling with Human Benchmarking,drug_discovery
+Probe Before You Edit: Probing-Guided Molecular Optimization for LLM Agents in Structure-Based Drug Design,drug_discovery
+TCM-Agent: Advancing network pharmacology and herbal medicine discovery with LLM-based multi-agent systems,drug_discovery
+Biomni: A General-Purpose Biomedical AI Agent,cross_domain_bioinformatics
+Can AI Agents Design and Implement Drug Discovery Pipelines?,drug_discovery
+DeepEvidence: Empowering Biomedical Discovery with Deep Knowledge Graph Research,cross_domain_bioinformatics
+"DELPHAI, AI Agent for Predicting Drug Response and Resistance",transcriptomics
+DrugPilot: LLM-based Parameterized Reasoning Agent for Drug Discovery,drug_discovery
+FROGENT: An End-to-End Full-process Drug Design Multi-Agent System,drug_discovery
+Identifying a logical specification and a program for an LLM-based generator of lead molecules,drug_discovery
+LLM Agent Swarm for Hypothesis-Driven Drug Discovery,drug_discovery
+MADD: Multi-Agent Drug Discovery Orchestra,drug_discovery
+MS4MS: LLMs-driven Multi-agent System for Small-molecule Identification via LC-MS/MS,drug_discovery
+OriGene: A Self-Evolving Virtual Disease Biologist Automating Therapeutic Target Discovery,drug_discovery
+Scalable Agentic Reasoning for Designing Biologics Targeting Intrinsically Disordered Proteins,proteomics
+SigSpace: an LLM-based agent for drug response signature interpretation,transcriptomics
+CACTUS: Chemistry Agent Connecting Tool Usage to Science,drug_discovery
+Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning,drug_discovery
+PatentAgent: Intelligent Agent for Automated Pharmaceutical Patent Analysis,drug_discovery
+Causal-Enhanced AI Agents for Medical Research Screening,cross_domain_bioinformatics
+LUMI-lab: A foundation model-driven autonomous platform enabling discovery of ionizable lipid designs for mRNA delivery,drug_discovery
+Agentic-J: An AI Agent for Biological Microscopy Image Analysis,computational_pathology_bioimaging
+An agentic framework for autonomous scientific discovery in cancer pathology.,computational_pathology_bioimaging
+BioEngine: scalable execution and adaptation of bioimage AI through agent-readable interfaces,computational_pathology_bioimaging
+CellDX AI Autopilot: Agent-Guided Training and Deployment of Pathology Classifiers,computational_pathology_bioimaging
+Democratizing and accelerating AI-driven pathology research through agentic intelligence,computational_pathology_bioimaging
+DERMA-Agent: An Agentic Framework for Prognostic Discovery in Pan-Cancer Pathology,computational_pathology_bioimaging
+LAMMI-Pathology: A Tool-Centric Bottom-Up LVLM-Agent Framework for Molecularly Informed Medical Intelligence in Pathology,computational_pathology_bioimaging
+LUCAID: Agentic Multimodal AI for Lung Cancer Precision Pathology,computational_pathology_bioimaging
+MMNavAgent: Multi-Magnification WSI Navigation Agent for Clinically Consistent Whole-Slide Analysis,computational_pathology_bioimaging
+NeuroRefiner: Morphology-Aware Multi-Agent Refinement for 3D Fluorescence Microscopy Neuron Segmentation,computational_pathology_bioimaging
+PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow,computational_pathology_bioimaging
+QCAgent: An agentic framework for quality-controllable pathology report generation from whole slide image,computational_pathology_bioimaging
+SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery,computational_pathology_bioimaging
+Toward Auditable Neuro-Symbolic Reasoning in Pathology: SQL as an Explicit Trace of Evidence,computational_pathology_bioimaging
+Exploring General-Purpose Autonomous Multimodal Agents for Pathology Report Generation,computational_pathology_bioimaging
+PathAgent: Toward Interpretable Analysis of Whole-slide Pathology Images via Large Language Model-based Agentic Reasoning,computational_pathology_bioimaging
+PathFinder: A Multi-Modal Multi-Agent System for Medical Diagnostic Decision-Making Applied to Histopathology,computational_pathology_bioimaging
+Pathology-CoT: Learning Visual Chain-of-Thought Agent from Expert Whole Slide Image Diagnosis Behavior,computational_pathology_bioimaging
+I-Viewer: An Online Digital Pathology Analysis Platform with Agentic-RAG AI Copilot,computational_pathology_bioimaging
+Beyond Relevance: Bayesian Evidence Acquisition for Agentic Whole-Slide Image Reasoning,computational_pathology_bioimaging
+BioBrain: A Multi-Agent Framework for Natural Language Driven Quantitative Microscopy Data Analysis,computational_pathology_bioimaging
+Deep learning for microscopy without machine learning expertise,computational_pathology_bioimaging
+"Empowering AI data scientists using a multi-agent LLM framework with self-evolving capabilities for autonomous, tool-aware biomedical data analyses.",cross_domain_bioinformatics
+NEURA: A proof-carrying framework for hallucination-resistant neuroimaging automation,computational_pathology_bioimaging
+Evidence-based diagnostic reasoning with multi-agent copilot for human pathology,computational_pathology_bioimaging
+FedAgentBench: Towards Automating Real-world Federated Medical Image Analysis with Server-Client LLM Agents,computational_pathology_bioimaging
+"GenCellAgent: Generalizable, Training-Free Cellular Image Segmentation via Large Language Model Agents",computational_pathology_bioimaging
+NOVA: An Agentic Framework for Automated Histopathology Analysis and Discovery,computational_pathology_bioimaging
+WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis,computational_pathology_bioimaging
+YpathRAG:A Retrieval-Augmented Generation Framework and Benchmark for Pathology,computational_pathology_bioimaging
+BioMaster: Multi-agent system for automated bioinformatics analysis workflow.,cross_domain_bioinformatics
+Process-Reward Tactic Evolution for Long-Horizon Bioinformatics Workflows,cross_domain_bioinformatics
+BioInformatics Agent (BIA): Unleashing the Power of Large Language Models to Reshape Bioinformatics Workflow,transcriptomics
+Automated Bioinformatics Analysis via AutoBA,cross_domain_bioinformatics
+ToolsGenie 2.0: A Scalable and Extensible Multi-Agent System for Bioinformatics Automation,cross_domain_bioinformatics
+CausalPert: Grounding LLM Hypotheses in Regulatory Networks for Gene Perturbation Prediction, transcriptomics
+CompBioAgent:AN LLM-POWERED AGENT FOR SINGLE-CELL RNA-SEQ DATA EXPLORATION, transcriptomics
+STAgent: Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo, transcriptomics
+scExtract: leveraging large language models for fully automated single-cell RNA-seq data annotation and prior-informed multi-dataset integration, transcriptomics
+CASSIA: A multi-agent large language model for automated and interpretable cell annotation, transcriptomics
+TACTIC: An Explainable Multi-Agent Architecture for Classification & Interpretable Reasoning in Spatial Transcriptomics, transcriptomics
+scAgents: A Multi-Agent Framework for Fully Autonomous End-to-End Single-Cell Perturbation Analysis, transcriptomics
+M3A: Evaluating agentic AI for biological discovery in autonomous and copilot settings, transcriptomics
+OmicsNavigator : An auditable scientific partner for scalable hypothesis validation in spatial omics, computational_pathology_bioimaging
+BioInsight: Multi-Agent Orchestration for Interactive Biomedical Knowledge Discovery, proteomics
+LLM Agent Based Protein Function Prediction, proteomics
+ChatMol Copilot: An Agent for Molecular Modeling and Computation Powered by LLMs, drug_discovery
+GOAgent: Tool-Orchestrating Language Agents for Protein Function Annotation, proteomics
+ProteinMCP: An agentic AI framework for autonomous protein engineering, proteomics
+PDAgent: An LLM-Driven Autonomous Agent Framework Towards In Silico Protein Design via Directed Mutation, proteomics
+VibeGen: Agentic end-to-end de novo protein design for tailored dynamics using a language diffusion model, proteomics
+ProteinCrow: A Language Model Agent That Can Design Proteins, proteomics
+AgentPLM: Agentic Protein Language Models with Reasoning-Augmented Decoding for Protein Sequence Design, proteomics
+Agent-Guided De Novo Design of Nanobody Binders Against a Novel Cancer Target, drug_discovery
+ORI: Functional protein design and enhancement with ontology reinforcement iteration, proteomics
+SwiftDossier: Tailored Automatic Dossier for Drug Discovery with LLMs and Agents, drug_discovery
+PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration, computational_pathology_bioimaging
+Agentic Superoptimization of Bioimaging Analysis Workflows, computational_pathology_bioimaging
+LSM-Copilot: A Skill-Flow Agent for Fluorescence Microscopy Analysis, computational_pathology_bioimaging
+Steering veridical large language model analyses by correcting and enriching generated database queries: first steps toward ChatGPT bioinformatics, genomics
+"BioMedAgent: Empowering AI data scientists using a multi-agent LLM framework with self-evolving capabilities for autonomous, tool-aware biomedical data analyses", cross_domain_bioinformatics
