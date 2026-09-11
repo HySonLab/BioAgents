@@ -1,0 +1,24 @@
+{
+  "records_identified": 2501,
+  "records_by_database": {
+    "PubMed": 729,
+    "Europe PMC": 1102,
+    "arXiv": 670
+  },
+  "records_excluded_by_automation": 54,
+  "records_retained_for_deduplication": 2447,
+  "duplicate_records_removed": 1095,
+  "identifier_based_duplicates": 1011,
+  "title_based_duplicates": 84,
+  "records_available_for_screening": 1352,
+  "checks": {
+    "filtering": true,
+    "deduplication": true
+  },
+  "input_files": {
+    "combined": "/home/phpham/Work/BioAgents/data/01_combined_source_rows.csv",
+    "rejected": "/home/phpham/Work/BioAgents/data/02_postcombine_rejected_rows.csv",
+    "filtered": "/home/phpham/Work/BioAgents/data/02_filtered_candidate_rows.csv",
+    "deduplicated": "/home/phpham/Work/BioAgents/data/03_deduplicated_candidates.csv"
+  }
+}

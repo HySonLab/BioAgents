@@ -2,7 +2,6 @@ title,primary_category
 Autonomous computational prioritisation of colorectal cancer vulnerabilities via multi-scale AI swarms,drug_discovery
 MechAInistic: An LLM-guided Multi-Agent System for Reasoning over Genome-Scale Constraint-Based Metabolic Models,drug_discovery
 Optimizing genomics-aware clinical agents in precision oncology,drug_discovery
-Development and validation of an autonomous artificial intelligence agent for clinical decision-making in oncology,drug_discovery
 A multi-agent system for automating scientific discovery,drug_discovery
 The Virtual Biotech: A Multi-Agent AI Framework for Therapeutic Discovery and Development,drug_discovery
 TSASSISTANT: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment,drug_discovery
@@ -18,13 +17,10 @@ DynaMate: An Autonomous Agent for Protein-Ligand Molecular Dynamics Simulations,
 A large-scale concordance study of toxicity findings across preclinical species and humans for small molecules and biologics,drug_discovery
 A Modular Agentic Framework for Synthetically Constrained Multi-Objective Hit-to-Lead Optimization,drug_discovery
 Accelerating scientific discovery with Co-Scientist,drug_discovery
-Agentic AI for Structural Elucidation and Discovery of Drug Metabolites from Mass Spectrometry Data,drug_discovery
 AI-powered TargetMap: Enabling system-level target discovery through full-path reasoning on a unified knowledge graph,drug_discovery
 ALEX: Automatic Language Explanations for Interpreting Treatment Effects via Multi-Agents,drug_discovery
 "An Agentic Platform for Drug Repurposing Unified across Molecular, Phenotypic, and Clinical Scales",drug_discovery
 Cirrina: LLM-driven pharmacological reasoning agent enables preclinical CNS drug evaluation,drug_discovery
-ClinicalReTrial: Clinical Trial Redesign with Self-Evolving Agents,drug_discovery
-Closing the Prior-Posterior Loop: Self-Reflective Molecular Design with Analysis-Driven LLM Iteration,drug_discovery
 Contextual Invertible World Models: A Neuro-Symbolic Agentic Framework for Colorectal Cancer Drug Response,drug_discovery
 DeepRoot: A KG-Coordinated Multi-Agent System for Therapeutic Reasoning over Historical Medical Texts,drug_discovery
 DeepTCM1.0: A Multi-Expert AI Agent for Deciphering Mechanisms of Chinese Herbal Formulae Based on General Large Language Models,drug_discovery
@@ -52,10 +48,10 @@ AUTOCT: Automating Interpretable Clinical Trial Prediction with LLM Agents,drug_
 "Bio AI Agent: A Multi-Agent Artificial Intelligence System for Autonomous CAR-T Cell Therapy Development with Integrated Target Discovery, Toxicity Prediction, and Rational Molecular Design",drug_discovery
 BioChemAIgent: An AI-driven Protein Modeling and Docking Framework for Structure-Based Drug Discovery,drug_discovery
 BioScientist Agent: Designing LLM-Biomedical Agents with KG-Augmented RL Reasoning Modules for Drug Repurposing and Mechanistic of Action Elucidation,drug_discovery
-Conversational no-code and multi-agentic disease module identification and drug repurposing prediction with ChatDRex,drug_discovery
+"Conversational No-code, Multi-agentic Disease Module Identification and Drug Repurposing Prediction with ChatDRex",drug_discovery
 "Democratizing Drug Discovery with an Orchestrated, Knowledge-Driven Multi-Agent Team for User-Guided Therapeutic Design",drug_discovery
-Drug repurposing for Alzheimer's disease using a graph-of-thoughts reasoning approach,drug_discovery
-DrugAgent: Reliable Multi-Agent Integration of Conflicting Biomedical Evidence for Drug-Target Interaction Assessment,drug_discovery
+Drug repurposing for Alzheimer's disease using a graph-of-thoughts based large language model to infer drug-disease relationships in a comprehensive knowledge graph,drug_discovery
+DruGagent: Multi-Agent Large Language Model-Based Reasoning for Drug-Target Interaction Prediction,drug_discovery
 Explainable Reasoning Path Inference of Anti-Cancer Drug Sensitivity on Genomic Knowledge Graph via Macro-Micro Agent Collaborative Reinforcement Learning,drug_discovery
 Exploring Modularity of Agentic Systems for Drug Discovery,drug_discovery
 Fleming: An AI Agent for Antibiotic Design for Mycobacterium tuberculosis,drug_discovery
@@ -72,7 +68,6 @@ QSP-Copilot: An AI-Augmented Platform for Accelerating Quantitative Systems Phar
 RAG-Enhanced Collaborative LLM Agents for Drug Discovery,drug_discovery
 RareAgent: Self-Evolving Reasoning for Drug Repurposing in Rare Diseases,drug_discovery
 Technical Implementation of Tippy: Multi-Agent Architecture and System Design for Drug Discovery Laboratory Automation,drug_discovery
-VALID-Mol: a Systematic Framework for Validated LLM-Assisted Molecular Design,drug_discovery
 DrugAgent: Automating AI-aided Drug Discovery Programming through LLM Multi-Agent Collaboration,drug_discovery
 dZiner: Rational Inverse Design of Materials with AI Agents,drug_discovery
 Human-in-the-loop active learning for goal-oriented molecule generation,drug_discovery
@@ -84,7 +79,6 @@ An AI-agent-orchestrated grey-box Transformer framework for sparse pharmacokinet
 An explainable hypothesis-driven approach to Drug-Induced Liver Injury with HADES,drug_discovery
 DDIAgents: Mechanism-Conditioned Context Flow for Drug-Drug Interaction Prediction,drug_discovery
 DiscoVerse: multi-agent pharmaceutical co-scientist for traceable drug discovery and reverse translation,drug_discovery
-irAE.AI: AI-powered exploration of real-world immune-related adverse events,drug_discovery
 "KnowMol: A Knowledge-Guided Multi-Agent Framework for Interpretable Drug–Target Interaction Prediction, Validated in PRMT3-Targeted NAFLD Therapy",drug_discovery
 "MolClaw: An Autonomous Agent with Hierarchical Skills for Drug Molecule Evaluation, Screening, and Optimization",drug_discovery
 MolLingo: Molecule-Native Representations for LLM-Powered Scientific Agents,drug_discovery
@@ -103,5 +97,6 @@ MS4MS: LLMs-driven Multi-agent System for Small-molecule Identification via LC-M
 OriGene: A Self-Evolving Virtual Disease Biologist Automating Therapeutic Target Discovery,drug_discovery
 CACTUS: Chemistry Agent Connecting Tool Usage to Science,drug_discovery
 Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning,drug_discovery
-PatentAgent: Intelligent Agent for Automated Pharmaceutical Patent Analysis,drug_discovery
+$\texttt{PatentAgent}$: Intelligent Agent for Automated Pharmaceutical Patent Analysis,drug_discovery
 LUMI-lab: A foundation model-driven autonomous platform enabling discovery of ionizable lipid designs for mRNA delivery,drug_discovery
+DrugAgent: Reliable Multi-Agent Integration of Conflicting Biomedical Evidence for Drug-Target Interaction Assessment,drug_discovery

@@ -3,7 +3,7 @@ PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery,
 PlantAI: A Multi-Agent System for Plant Functional Genomics Analysis and Biological Knowledge Interpretation,transcriptomics
 HypoGeneAgent: A Hypothesis Language Agent for Gene-Set Cluster Resolution Selection Using Perturb-seq Datasets,transcriptomics
 IAN: An Intelligent System for Omics Data Analysis and Discovery,transcriptomics
-PerTurboAgent: An LLM-based Agent for Designing Iterative Perturb-Seq Experiments,transcriptomics
+PerTurboAgent: A Self-Planning Agent for Boosting Sequential Perturb-seq Experiments,transcriptomics
 A Conversational Multi-Agent AI System for Integrated Multi-Omics Analysis and Biomedical Discovery,transcriptomics
 "Autonomous Spatial Transcriptomics Analysis (ASTA): Demonstrating Performance Improvements through Clustering, Biological Annotation, and AI-Driven Discovery",transcriptomics
 BIOGEN: evidence-grounded multi-agent reasoning framework for transcriptomic interpretation in antimicrobial resistance,transcriptomics
@@ -27,7 +27,7 @@ An agentic AI framework for ingestion and standardization of single-cell RNA-seq
 AtlasAgent: Vision language model and Agent-guided Framework for Evaluation of Atlas-scale Single-cell Integration,transcriptomics
 Automatic biomarker discovery and enrichment with BRAD,transcriptomics
 Autonomous AI Agents Discover Aging Interventions from Millions of Molecular Profiles,transcriptomics
-A Brain Cell Type Resource Created by Large Language Models and a Multi-Agent AI System for Collaborative Community Annotation,transcriptomics
+BRAINCELL-AID: An Agentic AI Created Brain Cell Type Resource for Community Annotation,transcriptomics
 CELLFORGE: Agentic Design of Virtual Cell Models,transcriptomics
 Development of an Agentic AI Model for NGS Downstream Analysis Targeting Researchers with Limited Biological Background,transcriptomics
 "Guided multi-agent AI invents highly accurate, uncertainty-aware transcriptomic aging clocks",transcriptomics

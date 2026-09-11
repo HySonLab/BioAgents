@@ -18,7 +18,6 @@ The Station: An Open-World Environment for AI-Driven Discovery,cross_domain_bioi
 Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,cross_domain_bioinformatics
 Rethinking Scientific Discovery in the Agentic Era,cross_domain_bioinformatics
 Valhalla: A Layered Knowledge-State and Service-Governance Framework for Long-Term Scientific Knowledge Work,cross_domain_bioinformatics
-Connecting Large Language Model Agent to High Performance Computing Resource,cross_domain_bioinformatics
 IGDA: Interactive Graph Discovery through Large Language Model Agents,cross_domain_bioinformatics
 LongevityLLM: A Function-Driven AI Agent for End-to-End Protein and Aging Research,cross_domain_bioinformatics
 Aviary: training language agents on challenging scientific tasks,cross_domain_bioinformatics
@@ -36,8 +35,7 @@ MicroGrowAgents: An Agentic AI System for Microbial Cultivation Engineering,cros
 Towards a Medical AI Scientist,cross_domain_bioinformatics
 <i>Transplant-Agents</i>  : A Multi-Agent Artificial Intelligence Framework for Reproducibility Assessment of Post-Transplant Risk Prediction and Rejection Biomarkers,cross_domain_bioinformatics
 Agentic RAG-Driven Multi-Omics Analysis for PI3K/AKT Pathway Deregulation in Precision Medicine,cross_domain_bioinformatics
-Automating AI Discovery for Biomedicine Through Knowledge Graphs and Large Language Models Agents,cross_domain_bioinformatics
-Optimizing Life Sciences Agents in Real-Time using Reinforcement Learning,cross_domain_bioinformatics
+Automating AI Discovery for Biomedicine Through Knowledge Graphs And LLM Agents,cross_domain_bioinformatics
 SelfAI: A self-directed framework for long-horizon scientific discovery,cross_domain_bioinformatics
 Talk2Biomodels: AI agent-based open-source LLM initiative for kinetic biological models,cross_domain_bioinformatics
 The Denario project: Deep knowledge AI agents for scientific discovery,cross_domain_bioinformatics
@@ -56,3 +54,5 @@ BioMaster: Multi-agent system for automated bioinformatics analysis workflow.,cr
 Process-Reward Tactic Evolution for Long-Horizon Bioinformatics Workflows,cross_domain_bioinformatics
 Automated Bioinformatics Analysis via AutoBA,cross_domain_bioinformatics
 ToolsGenie 2.0: A Scalable and Extensible Multi-Agent System for Bioinformatics Automation,cross_domain_bioinformatics
+A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data,cross_domain_bioinformatics
+NVAITC AI Scientist: A Governed End-to-End Research System -- A Hypertension GWAS Case Study,cross_domain_bioinformatics

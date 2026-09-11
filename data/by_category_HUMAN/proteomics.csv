@@ -17,7 +17,6 @@ Using a GPT-5-driven autonomous lab to optimize the cost and titer of cell-free 
 Autonomous Discovery of Functional Random Heteropolymer Blends through Evolutionary Formulation Optimization,proteomics
 Beyond Protein Language Models: An Agentic LLM Framework for Mechanistic Enzyme Design,proteomics
 DrBioRight 2.0: an LLM-powered bioinformatics chatbot for large-scale cancer functional proteomics analysis,proteomics
-Multimodal AI agents for capturing and sharing laboratory practice,proteomics
 ProtChat: An AI Multi-Agent for Automated Protein Analysis Leveraging GPT-4 and Protein Language Model,proteomics
 Sparks: Multi-Agent Artificial Intelligence Model Discovers Protein Design Principles,proteomics
 Swarms of Large Language Model Agents for Protein Sequence Design with Experimental Validation,proteomics
@@ -40,3 +39,7 @@ TourSynbio: A Multi-Modal Large Model and Agent Framework to Bridge Text and Pro
 MAS2HP: A Multi Agent System to Predict Protein Structure in 2D HP model,proteomics
 Robotic perturbation proteomics and AI agents enable scalable drug mechanism discovery.,proteomics
 Scalable Agentic Reasoning for Designing Biologics Targeting Intrinsically Disordered Proteins,proteomics
+ProteinMCP: An agentic AI framework for autonomous protein engineering,proteomics
+The Virtual Lab: AI Agents Design New SARS-CoV-2 Nanobodies with Experimental Validation,proteomics
+Augmenting Large Language Models and Retrieval-Augmented Generation with an Evidence-Based Medicine-Enabled Agent System,proteomics
+Rank-and-Reason: Multi-Agent Collaboration Accelerates Zero-Shot Protein Mutation Prediction,proteomics
