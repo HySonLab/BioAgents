@@ -6,4 +6,5 @@ rispy
 bibtexparser
 feedparser
 requests
-rapidfuzz
+scipy
+matplotlib

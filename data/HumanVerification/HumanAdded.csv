@@ -1,0 +1,25 @@
+﻿record_id,title
+GEN-029,Steering veridical large language model analyses by correcting and enriching generated database queries: first steps toward ChatGPT bioinformatics
+TRANS-031,scAgent: Agentic Universal Single-Cell Annotation
+TRANS-039,ELISA (Embedding-Linked Interactive Single-cell Agent): an interpretable hybrid generative Artificial Intelligence agent for expression-grounded discovery in single-cell genomics
+TRANS-056,CASSIA: A multi-agent large language model for automated and interpretable cell annotation
+TRANS-057,TACTIC: An Explainable Multi-Agent Architecture for Classification & Interpretable Reasoning in Spatial Transcriptomics
+TRANS-058,scAgents: A Multi-Agent Framework for Fully Autonomous End-to-End Single-Cell Perturbation Analysis
+TRANS-059,OmicsNavigator: An auditable scientific partner for scalable hypothesis validation in spatial omics
+PROT-039,BioInsight: Multi-Agent Orchestration for Interactive Biomedical Knowledge Discovery
+PROT-040,GOAgent: Tool-Orchestrating Language Agents for Protein Function Annotation
+PROT-041,PDAgent: An LLM-Driven Autonomous Agent Framework Towards In Silico Protein Design via Directed Mutation
+PROT-042,ProteinCrow: A Language Model Agent That Can Design Proteins
+PROT-043,AgentPLM: Agentic Protein Language Models with Reasoning-Augmented Decoding for Protein Sequence Design
+PROT-044,Functional protein design and enhancement with ontology reinforcement iteration
+CPBI-005,WSInsight as a cloud-native pipeline for single-cell pathology inference on whole-slide images
+CPBI-035,PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration
+CPBI-036,Agentic Superoptimization of Bioimaging Analysis Workflows
+CPBI-037,LSM-Copilot: A Skill-Flow Agent for Fluorescence Microscopy Analysis
+DRUG-084,Frogent: An end-to-end full-process drug design agent
+DRUG-093,ChatMol Copilot: An Agent for Molecular Modeling and Computation Powered by LLMs
+DRUG-094,Agent-Guided De Novo Design of Nanobody Binders Against a Novel Cancer Target
+DRUG-095,SwiftDossier: Tailored Automatic Dossier for Drug Discovery with LLMs and Agents
+CROSS-030,Towards an AI co-scientist
+CROSS-043,Autonomous biomedical research with an artificial intelligence agent
+CROSS-044,Empowering biomedical evidence exploration and synthesis with deep knowledge graph research
