@@ -713,10 +713,10 @@ The human-verification audit trail should record:
 
 
 
-## Citation
+<!-- ## Citation
 
 If you use this repository, please cite the associated manuscript:
 
 ```text
 Pham P, Hy TS. Evaluating Agentic Bioinformatics through Functionality, Evidence, and Validation.
-```
+``` -->
