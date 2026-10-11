@@ -2,9 +2,17 @@
 
 This repository provides the reproducible literature-retrieval and candidate-screening pipeline used to construct the evidence map for the manuscript **“Evaluating Agentic Bioinformatics through Functionality, Evidence, and Validation.”**
 
+<p align="center">
+  <img
+    src="assets/Overview.png"
+    ter">
+  <em>
+  Conceptual overview of agentic bioinformatics.
+  </em>
+</p>
+
 The pipeline searches **PubMed**, **Europe PMC**, and **arXiv**; applies explicit and implicit agent-retrieval strategies; verifies biological-domain evidence; preserves retrieval provenance; standardizes records from different sources; filters ineligible entries; deduplicates publications; assigns each candidate a primary domain and preliminary record type; and exports review-ready files for human verification.
 
-> **Important:** The automated pipeline identifies candidates for manual review. Automated retrieval, filtering, domain assignment, preliminary classification, and abstract-based agentic screening do not replace full-text verification or final FEV coding.
 
 ## Contents
 
@@ -23,6 +31,17 @@ The pipeline searches **PubMed**, **Europe PMC**, and **arXiv**; applies explici
 - [Citation](#citation)
 
 ## Workflow overview
+
+<p align="center">
+  <img
+    src="assets/PRISMA.png"
+    ter">
+  <em>
+Overview of the literature retrieval, filtering, deduplication, domain assignment, and human-verification workflow.
+  </em>
+</p>
+
+
 
 ```text
 config/search_config.json
@@ -198,7 +217,7 @@ Python 3.10 or later is recommended.
 Create and activate a Conda environment:
 
 ```bash
-conda create -n fev python=3.11 -y
+conda create -n fev python=3.10 -y
 conda activate fev
 ```
 
@@ -657,11 +676,11 @@ Reports candidate counts by primary domain and preliminary data type.
 
 The following files support manual review:
 
-### `data/HumanVerification/04_candidates_sorted_by_domain.csv`
+### `data/HumanVerification/HumanVerification.csv`
 
 A review copy of the automated candidate set. Each candidate should receive a documented inclusion or exclusion decision.
 
-### `data/HumanVerification/Manually Identified.csv`
+### `data/HumanVerification/ManuallyIdentified.csv`
 
 Contains additional publications identified through targeted searches, citation tracing, system-name searches, companion publications, or updated versions. These records should be evaluated using the same eligibility criteria applied to database-derived candidates.
 
@@ -684,79 +703,6 @@ The human-verification audit trail should record:
 - supporting notes and source evidence;
 - reviewer and adjudication information, where applicable.
 
-## Search and screening logic
-
-### Standardized metadata
-
-The pipeline preserves a common set of fields, including:
-
-- search and query identifiers;
-- source and source record ID;
-- title, authors, year, abstract, keywords, venue, and publication type;
-- DOI, PMID, PMCID, and arXiv ID;
-- query mode and query domain;
-- explicit and implicit agent-term hits;
-- matched domain terms;
-- retrieval route, confidence, status, and rejection reason;
-- normalized title.
-
-### Full-agent screening support
-
-The crawler includes abstract-based screening signals related to:
-
-- goal-directed control;
-- stateful tool execution;
-- inspectable scientific support;
-- repair and verification.
-
-Abstract screening is used only to prioritize full-text review and does not establish final agentic status:
-
-```text
-agentic_status_preliminary = NEEDS_FULL_TEXT_REVIEW
-```
-
-Final manual criterion codes are:
-
-```text
-D   demonstrated
-A   absent
-U   unclear
-NR  not reported
-NA  not applicable
-```
-
-A system is classified as `FULL_AGENTIC` only when all three final criteria are coded `D`:
-
-- goal-directed control;
-- stateful tool execution;
-- inspectable scientific support.
-
-Final classification must be based on manual review, not on abstract keyword matches alone.
-
-## Resume, logging, and error handling
-
-### HTTP retries
-
-Network requests support:
-
-- configurable retry attempts;
-- exponential backoff with random jitter;
-- special handling for HTTP 429 responses;
-- retries for HTTP 500, 502, 503, and 504 responses;
-- retries after connection and timeout errors;
-- maximum waits capped at 1,800 seconds.
-
-### Resume behavior
-
-PubMed and arXiv preserve completed chunks and can skip them when resume mode is enabled.
-
-arXiv also stores a configuration fingerprint for each final domain file. A completed domain is skipped only when its retained output, rejected output, and expected fingerprint are all present.
-
-Europe PMC writes domain-level files directly and does not use the same chunk-level resume process.
-
-### Interrupted runs
-
-If the search runner is interrupted with `Ctrl+C`, previously completed domain or chunk files remain available. Rerun the same command to continue where resume is supported.
 
 ### Logs
 
@@ -770,71 +716,6 @@ search_pubmed_YYYYMMDD_HHMMSS.log
 
 Review these logs for failed API calls, rate-limit waits, incomplete domains, warnings, and source failures before running the filtering stage.
 
-## Reproducibility checklist
-
-Before manuscript submission or repository archiving, confirm that:
-
-- `search_config.json` matches the manuscript search vocabulary and date interval;
-- the contact email is valid;
-- all source searches completed successfully;
-- retrieval logs were reviewed;
-- retained and rejected source-level CSV files were preserved;
-- `input_file_manifest.csv` contains the expected source files;
-- the post-combination filtering behavior is intentional;
-- deduplication outputs were checked for preprint, journal, and title variants;
-- every candidate has a documented human-verification decision;
-- manually identified records were screened using the same criteria;
-- final system and benchmark files match the manuscript counts;
-- independent pre-adjudication coding and adjudication records were retained;
-- figures and statistical summaries were generated from finalized data;
-- the Python environment was exported;
-- the repository version associated with the manuscript was archived.
-
-A typical reproducible run is:
-
-```bash
-conda activate fev
-python run_all_searches.py --config config/search_config.json
-python run_filter.py --config config/search_config.json --input-root data_raw/
-```
-
-## Troubleshooting
-
-### No eligible CSV files found
-
-Confirm that retained source CSV files exist under `data_raw/`. The combine stage intentionally ignores chunk directories and filenames containing `rejected`, `audit`, or `checkpoint`.
-
-### All discovered CSV files are empty or unreadable
-
-Inspect the source logs and CSV encoding. Empty files and files that raise parsing or encoding errors are skipped.
-
-### Search completed, but the filter finds no eligible CSV files
-
-Confirm that final domain outputs were written outside the source `chunks/` directories and that their filenames do not contain `rejected`.
-
-### The filtering pipeline points to the wrong repository
-
-Update the hard-coded root in `run_filter.py`, or revise the script to derive the root dynamically. If unchanged, the script may still reference:
-
-```text
-/home/phpham/Work/BioAgents
-```
-
-### PubMed rate limiting
-
-Provide `NCBI_API_KEY`, use a valid contact email, and retain the configured pauses. The code uses a slower default pause when no API key is available.
-
-### arXiv skips a completed domain after the configuration changes
-
-The arXiv collector compares a SHA-256 fingerprint derived from the search dates, term groups, domain vocabulary, settings, and collector version. If the fingerprint changes, the domain should be rerun.
-
-### Implicit-agent records disappear after retrieval
-
-Inspect `filter/02_filter.py`. The current post-combination gate requires `explicit_agent_hits` to be nonempty, even when the crawler retained a record through sufficient implicit functional-agent evidence.
-
-### Duplicate preprint and journal records remain
-
-Inspect DOI, PMID, arXiv ID, and normalized title values in `data/03_deduplicated_candidates.csv`. The current pipeline does not perform fuzzy-title matching, so records with materially different normalized titles may require manual consolidation.
 
 ## Citation
 
@@ -843,9 +724,3 @@ If you use this repository, please cite the associated manuscript:
 ```text
 Pham P, Hy TS. Evaluating Agentic Bioinformatics through Functionality, Evidence, and Validation.
 ```
-
-Replace this placeholder with the final journal citation, manuscript DOI, and archived repository DOI when available.
-
-## Contact
-
-For questions about the search pipeline, screening decisions, or evidence-map files, contact the corresponding author listed in the manuscript.
