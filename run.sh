@@ -1,3 +1,2 @@
-python run_all_searches.py
-python run_filter.py
-python run_merge.py
+python run_all_searches.py --config config/search_config.json
+python run_filter.py --config config/search_config.json --input-root data_raw/

@@ -1,10 +1,21 @@
-pandas
-openpyxl
-rapidfuzz
-unidecode
-rispy
-bibtexparser
-feedparser
-requests
-scipy
-matplotlib
+# Core search and filtering pipeline
+pandas==2.3.3
+requests==2.34.2
+PyYAML==6.0.3
+
+# Bibliographic and literature-record processing
+bibtexparser==1.4.4
+feedparser==6.0.14
+rispy==0.10.0
+RapidFuzz==3.14.5
+Unidecode==1.4.0
+
+# Spreadsheet outputs
+openpyxl==3.1.5
+
+# Numerical analysis and visualization
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.9
+seaborn==0.13.2
+pillow==12.3.0
