@@ -24,10 +24,6 @@ The pipeline searches **PubMed**, **Europe PMC**, and **arXiv**; applies explici
 - [Stage 2: Process retrieved records](#stage-2-process-retrieved-records)
 - [Output files](#output-files)
 - [Human verification](#human-verification)
-- [Search and screening logic](#search-and-screening-logic)
-- [Resume, logging, and error handling](#resume-logging-and-error-handling)
-- [Reproducibility checklist](#reproducibility-checklist)
-- [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 
 ## Workflow overview
