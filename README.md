@@ -198,6 +198,15 @@ Contains files used or produced during manual eligibility review, including the 
 
 Contains timestamped retrieval logs for PubMed, Europe PMC, and arXiv.
 
+Search logs are written to `logs/` with timestamps, for example:
+
+```text
+search_arxiv_YYYYMMDD_HHMMSS.log
+search_europe_pmc_YYYYMMDD_HHMMSS.log
+search_pubmed_YYYYMMDD_HHMMSS.log
+```
+
+Review these logs for failed API calls, rate-limit waits, incomplete domains, warnings, and source failures before running the filtering stage.
 ### `outputs/reports/`
 
 Contains pipeline manifests and count summaries, including the input-file manifest and domain-by-data-type counts.
@@ -700,17 +709,8 @@ The human-verification audit trail should record:
 - reviewer and adjudication information, where applicable.
 
 
-### Logs
 
-Search logs are written to `logs/` with timestamps, for example:
 
-```text
-search_arxiv_YYYYMMDD_HHMMSS.log
-search_europe_pmc_YYYYMMDD_HHMMSS.log
-search_pubmed_YYYYMMDD_HHMMSS.log
-```
-
-Review these logs for failed API calls, rate-limit waits, incomplete domains, warnings, and source failures before running the filtering stage.
 
 
 ## Citation
