@@ -1,6 +1,6 @@
 # Evaluating Agentic Bioinformatics through Functionality, Evidence, and Validation
 
-This repository contains the search, screening, human-verification, analysis, and visualization pipeline used to construct the evidence map for the manuscript **“Toward Accountable Agentic Bioinformatics through Functionality, Evidence, and Validation.”**
+This repository contains the search, screening, human-verification, analysis, and visualization pipeline used to construct the evidence map for the manuscript **“Evaluating Agentic Bioinformatics through Functionality, Evidence, and Validation.”**
 
 The pipeline searches **PubMed**, **Europe PMC**, and **arXiv**, harmonizes the retrieved records, removes duplicate and ineligible records, supports manual verification, and generates domain-level reports and statistical visualizations.
 
@@ -385,7 +385,7 @@ Before archiving the repository for peer review or publication, confirm that it 
 If you use this repository, please cite the associated manuscript:
 
 ```text
-Pham P, Hy TS. Toward Accountable Agentic Bioinformatics through Functionality, Evidence, and Validation.
+Pham P, Hy TS. Evaluating Agentic Bioinformatics through Functionality, Evidence, and Validation.
 ```
 
 Update this section with the final journal citation, DOI, and archived repository DOI after publication.
