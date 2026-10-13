@@ -1,25 +1,29 @@
 ﻿independent_reviewer,record_id,system_name,exact_matches_n,decisions_n,exact_agreement_percent,mismatch_count,mismatched_fields
-Tuan Tu Nguyen,GEN-012,GeneAgent,14,17,82.40%,3,F2:Y->NR;E3:Y->NR;E5:Y->U
-Tuan Tu Nguyen,TRANS-035,SpatialAgent,16,17,94.10%,1,F5:U->Y
+Tuan Tu Nguyen,GEN-012,GeneAgent,14,17,82.35%,3,F2:Y->NR;E3:Y->NR;E5:Y->U
+Tuan Tu Nguyen,EPI-001,TransAgent / TransMAgent,16,17,94.12%,1,F5:U->Y
+Tuan Tu Nguyen,TRANS-035,SpatialAgent,16,17,94.12%,1,F5:U->Y
 Tuan Tu Nguyen,PROT-023,ProtAgents,17,17,100.00%,0,
-Tuan Tu Nguyen,CPBI-022,PathAgent,16,17,94.10%,1,E6:NR->Y
-Tuan Tu Nguyen,DRUG-012,SAGA,15,17,88.20%,2,E2:Y->U;E6:NR->Y
+Tuan Tu Nguyen,CPBI-022,PathAgent,16,17,94.12%,1,E6:NR->Y
+Tuan Tu Nguyen,DRUG-012,SAGA,15,17,88.24%,2,E2:Y->U;E6:NR->Y
 Tuan Tu Nguyen,CROSS-023,STELLA,17,17,100.00%,0,
-Huu Phong Nguyen,GEN-012,GeneAgent,15,17,88.20%,2,F2:Y->NR;E3:Y->NR
+Huu Phong Nguyen,GEN-012,GeneAgent,15,17,88.24%,2,F2:Y->NR;E3:Y->NR
+Huu Phong Nguyen,EPI-001,TransAgent / TransMAgent,16,17,94.12%,1,E1:NR->Y
 Huu Phong Nguyen,TRANS-035,SpatialAgent,17,17,100.00%,0,
 Huu Phong Nguyen,PROT-023,ProtAgents,17,17,100.00%,0,
 Huu Phong Nguyen,CPBI-022,PathAgent,17,17,100.00%,0,
-Huu Phong Nguyen,DRUG-012,SAGA,15,17,88.20%,2,E2:Y->U;E6:NR->Y
+Huu Phong Nguyen,DRUG-012,SAGA,15,17,88.24%,2,E2:Y->U;E6:NR->Y
 Huu Phong Nguyen,CROSS-023,STELLA,17,17,100.00%,0,
-Duy Nguyen,GEN-012,GeneAgent,15,17,88.20%,2,F2:Y->NR;E3:Y->NR
-Duy Nguyen,TRANS-035,SpatialAgent,16,17,94.10%,1,E6:NR->Y
-Duy Nguyen,PROT-023,ProtAgents,16,17,94.10%,1,F5:U->NR
+Duy Nguyen,GEN-012,GeneAgent,15,17,88.24%,2,F2:Y->NR;E3:Y->NR
+Duy Nguyen,EPI-001,TransAgent / TransMAgent,16,17,94.12%,1,E6:Y->NR
+Duy Nguyen,TRANS-035,SpatialAgent,16,17,94.12%,1,E6:NR->Y
+Duy Nguyen,PROT-023,ProtAgents,16,17,94.12%,1,F5:U->NR
 Duy Nguyen,CPBI-022,PathAgent,17,17,100.00%,0,
-Duy Nguyen,DRUG-012,SAGA,16,17,94.10%,1,E6:NR->Y
+Duy Nguyen,DRUG-012,SAGA,16,17,94.12%,1,E6:NR->Y
 Duy Nguyen,CROSS-023,STELLA,17,17,100.00%,0,
-Shirong Kou,GEN-012,GeneAgent,15,17,88.20%,2,F2:Y->NR;E3:Y->NR
+Shirong Kou,GEN-012,GeneAgent,15,17,88.24%,2,F2:Y->NR;E3:Y->NR
+Shirong Kou,EPI-001,TransAgent / TransMAgent,17,17,100.00%,0,
 Shirong Kou,TRANS-035,SpatialAgent,17,17,100.00%,0,
-Shirong Kou,PROT-023,ProtAgents,16,17,94.10%,1,F5:U->NR
-Shirong Kou,CPBI-022,PathAgent,16,17,94.10%,1,E6:NR->Y
-Shirong Kou,DRUG-012,SAGA,16,17,94.10%,1,E6:NR->Y
+Shirong Kou,PROT-023,ProtAgents,16,17,94.12%,1,F5:U->NR
+Shirong Kou,CPBI-022,PathAgent,16,17,94.12%,1,E6:NR->Y
+Shirong Kou,DRUG-012,SAGA,16,17,94.12%,1,E6:NR->Y
 Shirong Kou,CROSS-023,STELLA,17,17,100.00%,0,
