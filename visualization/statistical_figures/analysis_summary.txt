@@ -2,8 +2,8 @@ Reviewer-focused AgenticSystem analysis
 Total records: 319
 
 Agentic status:
-  full-agentic: 166 (52.0%)
-  agent-adjacent: 153 (48.0%)
+  full-agentic: 167 (52.4%)
+  agent-adjacent: 152 (47.6%)
 
 Exact primary categories:
   drug_discovery: total=95, full-agentic=51, agent-adjacent=44
@@ -12,7 +12,7 @@ Exact primary categories:
   proteomics: total=44, full-agentic=30, agent-adjacent=14
   computational_pathology_bioimaging: total=37, full-agentic=21, agent-adjacent=16
   genomics: total=31, full-agentic=9, agent-adjacent=22
-  epigenomics: total=2, full-agentic=0, agent-adjacent=2
+  epigenomics: total=2, full-agentic=1, agent-adjacent=1
 
 Interpretation notes:
   Percentages are calculated within each displayed subgroup.

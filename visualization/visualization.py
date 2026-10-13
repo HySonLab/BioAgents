@@ -109,8 +109,8 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Draw agentic-status sensitivity and exact-category FEV figures."
     )
-    parser.add_argument("--input", default="AgenticSystem.csv")
-    parser.add_argument("--output-dir", default="reviewer_figures")
+    parser.add_argument("--input", default="data/HumanVerification/AgenticSystem.csv")
+    parser.add_argument("--output-dir", default="visualization/statistical_figures")
     parser.add_argument("--dpi", type=int, default=300)
     return parser.parse_args()
 

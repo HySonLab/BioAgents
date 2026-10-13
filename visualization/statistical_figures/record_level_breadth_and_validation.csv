@@ -10,7 +10,7 @@ GEN-008,genomics,full-agentic,2026,6,5,V3
 GEN-009,genomics,full-agentic,2026,6,4,V3
 GEN-010,genomics,agent-adjacent,2026,3,3,V3
 GEN-011,genomics,agent-adjacent,2025,3,5,V3
-GEN-012,genomics,full-agentic,2025,5,4,V3
+GEN-012,genomics,full-agentic,2025,6,5,V3
 GEN-013,genomics,agent-adjacent,2025,2,4,V2
 GEN-014,genomics,agent-adjacent,2025,1,4,V2
 GEN-015,genomics,agent-adjacent,2026,3,6,V3
@@ -28,7 +28,7 @@ GEN-026,genomics,full-agentic,2026,6,4,V3
 GEN-027,genomics,agent-adjacent,2025,3,4,V3
 GEN-028,genomics,agent-adjacent,2026,3,6,V1
 GEN-029,genomics,agent-adjacent,2025,4,4,V2
-EPI-001,epigenomics,agent-adjacent,2025,3,5,V3
+EPI-001,epigenomics,full-agentic,2025,5,5,V1
 EPI-002,epigenomics,agent-adjacent,2026,3,5,V3
 TRANS-001,transcriptomics,full-agentic,2026,6,5,V3
 TRANS-002,transcriptomics,agent-adjacent,2026,3,5,V1
@@ -63,7 +63,7 @@ TRANS-030,transcriptomics,full-agentic,2025,6,6,V1
 TRANS-031,transcriptomics,full-agentic,2026,5,5,V3
 TRANS-032,transcriptomics,full-agentic,2025,6,6,V3
 TRANS-033,transcriptomics,full-agentic,2025,6,6,V3
-TRANS-034,transcriptomics,full-agentic,2025,6,6,V4
+TRANS-034,transcriptomics,full-agentic,2025,5,5,V1
 TRANS-035,transcriptomics,full-agentic,2025,5,6,V3
 TRANS-036,transcriptomics,full-agentic,2024,6,4,V1
 TRANS-037,transcriptomics,full-agentic,2026,6,6,V3
@@ -154,7 +154,7 @@ CPBI-018,computational_pathology_bioimaging,full-agentic,2026,6,3,V3
 CPBI-019,computational_pathology_bioimaging,full-agentic,2026,6,6,V1
 CPBI-020,computational_pathology_bioimaging,agent-adjacent,2026,4,4,V1
 CPBI-021,computational_pathology_bioimaging,agent-adjacent,2026,3,4,V1
-CPBI-022,computational_pathology_bioimaging,full-agentic,2025,5,4,V3
+CPBI-022,computational_pathology_bioimaging,full-agentic,2025,5,3,V3
 CPBI-023,computational_pathology_bioimaging,agent-adjacent,2025,4,4,V1
 CPBI-024,computational_pathology_bioimaging,agent-adjacent,2026,4,4,V3
 CPBI-025,computational_pathology_bioimaging,full-agentic,2024,6,5,V3
@@ -181,7 +181,7 @@ DRUG-008,drug_discovery,full-agentic,2026,6,5,V3
 DRUG-009,drug_discovery,agent-adjacent,2026,4,4,V1
 DRUG-010,drug_discovery,agent-adjacent,2026,4,6,V1
 DRUG-011,drug_discovery,agent-adjacent,2026,4,4,V3
-DRUG-012,drug_discovery,full-agentic,2025,6,5,V4
+DRUG-012,drug_discovery,full-agentic,2025,6,4,V4
 DRUG-013,drug_discovery,full-agentic,2026,6,5,V3
 DRUG-014,drug_discovery,full-agentic,2026,5,5,V2
 DRUG-015,drug_discovery,full-agentic,2026,6,4,V2
