@@ -1100,36 +1100,32 @@ def temporal_supplement(
     """
     Supplementary descriptive temporal composition.
 
-    The panels describe the composition of the curated sample by
-    publication year and do not imply a field-wide temporal trend.
+    Panels describe the cross-sectional composition of the curated
+    evidence map by publication year. Panel d reports selected
+    workflow-accountability characteristics requested in reviewer
+    feedback: F6, V2 or higher, prospective testing (P), closed-loop
+    evaluation (C), and cumulative V4.
     """
 
     years = sorted(
         int(year)
         for year in df["publication_year"].dropna().unique()
     )
-
-    grouped = df.dropna(
-        subset=["publication_year"]
-    ).copy()
-
-    grouped["publication_year"] = (
-        grouped["publication_year"]
-        .astype(int)
-    )
+    grouped = df.dropna(subset=["publication_year"]).copy()
+    grouped["publication_year"] = grouped["publication_year"].astype(int)
 
     fig, axes = plt.subplots(
-        1,
-        3,
-        figsize=(14.8, 4.6),
+        2,
+        2,
+        figsize=(12.8, 9.2),
         gridspec_kw={
-            "wspace": 0.48,
+            "hspace": 0.43,
+            "wspace": 0.34,
         },
     )
 
     # Panel a: number of records by year and agentic status.
-    ax = axes[0]
-
+    ax = axes[0, 0]
     counts = pd.crosstab(
         grouped["publication_year"],
         grouped["agentic_status"],
@@ -1138,17 +1134,9 @@ def temporal_supplement(
         columns=STATUS_ORDER,
         fill_value=0,
     )
-
-    x = np.arange(
-        len(years)
-    )
-
+    x = np.arange(len(years))
     width = 0.36
-
-    for offset, status in zip(
-        [-width / 2, width / 2],
-        STATUS_ORDER,
-    ):
+    for offset, status in zip([-width / 2, width / 2], STATUS_ORDER):
         ax.bar(
             x + offset,
             counts[status],
@@ -1158,45 +1146,20 @@ def temporal_supplement(
             edgecolor="white",
             linewidth=0.6,
         )
-
-    ax.set_xticks(
-        x,
-        [str(year) for year in years],
-    )
-
-    ax.set_ylabel(
-        "Number of records"
-    )
-
-    ax.set_xlabel(
-        "Publication year"
-    )
-
-    ax.legend(
-        frameon=False,
-        loc="upper left",
-    )
-
-    add_panel_label(
-        ax,
-        "a",
-    )
+    ax.set_xticks(x, [str(year) for year in years])
+    ax.set_ylabel("Number of records")
+    ax.set_xlabel("Publication year")
+    ax.legend(frameon=False, loc="upper left")
+    add_panel_label(ax, "a")
 
     # Panel b: mean Functionality and Evidence breadth by year.
-    ax = axes[1]
-
+    ax = axes[0, 1]
     means = (
         grouped
-        .groupby("publication_year")[
-            [
-                "function_breadth",
-                "evidence_breadth",
-            ]
-        ]
+        .groupby("publication_year")[["function_breadth", "evidence_breadth"]]
         .mean()
         .reindex(years)
     )
-
     ax.plot(
         years,
         means["function_breadth"],
@@ -1206,7 +1169,6 @@ def temporal_supplement(
         label="Functionality breadth",
         color="#4C78A8",
     )
-
     ax.plot(
         years,
         means["evidence_breadth"],
@@ -1216,60 +1178,22 @@ def temporal_supplement(
         label="Evidence breadth",
         color="#59A14F",
     )
+    ax.set_xticks(years, [str(year) for year in years])
+    ax.set_xlim(min(years) - 0.15, max(years) + 0.15)
+    ax.set_ylim(0, 6.2)
+    ax.set_xlabel("Publication year")
+    ax.set_ylabel("Mean breadth score")
+    ax.legend(frameon=False, loc="upper left")
+    add_panel_label(ax, "b")
 
-    # Force integer year labels and remove intermediate half-year ticks.
-    ax.set_xticks(
-        years
-    )
-
-    ax.set_xticklabels(
-        [str(year) for year in years]
-    )
-
-    ax.set_xlim(
-        min(years) - 0.15,
-        max(years) + 0.15,
-    )
-
-    ax.set_ylim(
-        0,
-        6.2,
-    )
-
-    ax.set_xlabel(
-        "Publication year"
-    )
-
-    ax.set_ylabel(
-        "Mean breadth score"
-    )
-
-    ax.legend(
-        frameon=False,
-        loc="upper left",
-    )
-
-    add_panel_label(
-        ax,
-        "b",
-    )
-
-    # Panel c: percentage of curated records classified as full-agentic.
-    ax = axes[2]
-
+    # Panel c: percentage classified as full-agentic.
+    ax = axes[1, 0]
     full_share = (
         grouped
-        .groupby("publication_year")[
-            "agentic_status"
-        ]
-        .apply(
-            lambda status:
-                100.0
-                * status.eq("full-agentic").mean()
-        )
+        .groupby("publication_year")["agentic_status"]
+        .apply(lambda status: 100.0 * status.eq("full-agentic").mean())
         .reindex(years)
     )
-
     ax.plot(
         years,
         full_share,
@@ -1278,63 +1202,114 @@ def temporal_supplement(
         linewidth=1.8,
         color=STATUS_COLORS["full-agentic"],
     )
+    ax.set_xticks(years, [str(year) for year in years])
+    ax.set_xlim(min(years) - 0.15, max(years) + 0.15)
+    ax.set_ylim(0, 100)
+    ax.set_xlabel("Publication year")
+    ax.set_ylabel("Full-agentic share")
+    ax.yaxis.set_major_formatter(mtick.PercentFormatter())
+    add_panel_label(ax, "c")
 
-    # Force integer year labels and remove intermediate half-year ticks.
-    ax.set_xticks(
-        years
+    # Panel d: selected workflow-accountability characteristics by year.
+    ax = axes[1, 1]
+    qmat = qualifier_matrix(grouped)
+    stage_number = pd.to_numeric(
+        grouped["cumulative_level"].str.extract(r"V(\d+)")[0],
+        errors="coerce",
     )
-
-    ax.set_xticklabels(
-        [str(year) for year in years]
+    temporal_flags = pd.DataFrame(
+        {
+            "publication_year": grouped["publication_year"],
+            "F6 demonstrated": grouped["F6"].eq("Y"),
+            "V2 or higher": stage_number.ge(2),
+            "Prospective testing (P)": qmat["P"],
+            "Closed-loop evaluation (C)": qmat["C"],
+            "V4": grouped["cumulative_level"].eq("V4"),
+        },
+        index=grouped.index,
     )
-
-    ax.set_xlim(
-        min(years) - 0.15,
-        max(years) + 0.15,
+    temporal_rates = (
+        temporal_flags
+        .groupby("publication_year")
+        .mean()
+        .reindex(years)
+        .mul(100.0)
     )
-
-    ax.set_ylim(
-        0,
-        100,
+    accountability_styles = {
+        "F6 demonstrated": ("#7651A3", "o", "-"),
+        "V2 or higher": ("#3E7BB6", "s", "-"),
+        "Prospective testing (P)": ("#DF7B8A", "^", "--"),
+        "Closed-loop evaluation (C)": ("#2A9D72", "D", "--"),
+        "V4": ("#F2B512", "v", ":"),
+    }
+    for characteristic, (color, marker, linestyle) in accountability_styles.items():
+        ax.plot(
+            years,
+            temporal_rates[characteristic],
+            marker=marker,
+            markersize=5.5,
+            linewidth=1.7,
+            linestyle=linestyle,
+            color=color,
+            label=characteristic,
+        )
+    ax.set_xticks(years, [str(year) for year in years])
+    ax.set_xlim(min(years) - 0.15, max(years) + 0.15)
+    ax.set_ylim(0, 100)
+    ax.set_xlabel("Publication year")
+    ax.set_ylabel("Records within year")
+    ax.yaxis.set_major_formatter(mtick.PercentFormatter())
+    ax.legend(
+        frameon=False,
+        loc="upper left",
+        fontsize=8.5,
+        ncol=1,
+        handlelength=2.5,
     )
-
-    ax.set_xlabel(
-        "Publication year"
-    )
-
-    ax.set_ylabel(
-        "Full-agentic share"
-    )
-
-    ax.yaxis.set_major_formatter(
-        mtick.PercentFormatter()
-    )
-
-    add_panel_label(
-        ax,
-        "c",
-    )
+    add_panel_label(ax, "d")
 
     for panel_ax in axes.flat:
-        style_axis(
-            panel_ax
-        )
+        style_axis(panel_ax)
 
     fig.subplots_adjust(
-        left=0.07,
-        right=0.98,
-        bottom=0.18,
-        top=0.93,
-        wspace=0.52,
+        left=0.085,
+        right=0.985,
+        bottom=0.10,
+        top=0.96,
+        hspace=0.43,
+        wspace=0.34,
     )
 
     save_figure(
         fig,
-        outdir
-        / "figureS_temporal_composition",
+        outdir / "figureS_temporal_composition",
         dpi,
     )
 
+    # Export exact counts and percentages underlying panel d.
+    temporal_counts = (
+        temporal_flags
+        .groupby("publication_year")
+        .sum(numeric_only=True)
+        .reindex(years)
+    )
+    year_totals = grouped.groupby("publication_year").size().reindex(years)
+    rows = []
+    for year in years:
+        for characteristic in accountability_styles:
+            rows.append(
+                {
+                    "publication_year": year,
+                    "year_total": int(year_totals.loc[year]),
+                    "characteristic": characteristic,
+                    "count": int(temporal_counts.loc[year, characteristic]),
+                    "percentage": float(temporal_rates.loc[year, characteristic]),
+                }
+            )
+    pd.DataFrame(rows).to_csv(
+        outdir / "temporal_accountability_characteristics.csv",
+        index=False,
+    )
 
 def export_tables(df, outdir, stage_by_status, composition, function, evidence, stages, n_full):
     qmat = qualifier_matrix(df)
