@@ -1,0 +1,8 @@
+domain_label,V0,V1,V2,V3,V4
+Drug discovery,1,50,17,24,3
+Transcriptomics,0,25,3,29,2
+Cross-domain,0,22,10,16,3
+Proteomics,0,22,6,9,7
+Pathology/bioimaging,0,15,4,17,1
+Genomics,0,8,3,19,1
+Epigenomics,0,1,0,1,0

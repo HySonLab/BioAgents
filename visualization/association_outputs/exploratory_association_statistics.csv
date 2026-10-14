@@ -1,0 +1,10 @@
+association,n,method,effect_name,effect_size,ci_95_low,ci_95_high,p_value
+Functionality breadth vs Evidence breadth,319,Spearman rank correlation,rho,0.08282677429698132,-0.024653095993912175,0.1859732137671892,0.13992683300466724
+Functionality breadth vs Validation stage,319,Spearman rank correlation,rho,0.22251019148297954,0.11330025478018374,0.3246219687162142,6.099476164798994e-05
+Evidence breadth vs Validation stage,319,Spearman rank correlation,rho,0.08856673346619316,-0.02647393948943549,0.19868285878871647,0.11439418508703607
+Publication year vs Functionality breadth,319,Spearman rank correlation,rho,0.060040450582014994,-0.05060373376244839,0.16957490257181018,0.28501925899795316
+Publication year vs Evidence breadth,319,Spearman rank correlation,rho,0.04226427308725977,-0.06856787378019844,0.15037560544255701,0.4519085693067776
+Publication year vs Validation stage,319,Spearman rank correlation,rho,-0.017928011199906127,-0.1303076010234547,0.08953900676922173,0.7497468584891591
+Functionality breadth across Validation stages,319,Kruskal-Wallis,H,22.521059856392192,,,0.00015780589789940016
+Evidence breadth across Validation stages,319,Kruskal-Wallis,H,16.281087960896798,,,0.002664272930153521
+Domain vs Validation stage,319,Chi-square; bias-corrected Cramer's V,Cramer's V,0.11411369605540558,,,0.018970019444987635
