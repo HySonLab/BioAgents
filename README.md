@@ -56,6 +56,14 @@ Human verification and final FEV coding
 ## Quick start
 
 Python 3.10 or later is recommended.
+Option 1: Create the complete Conda environment
+
+```bash
+conda env create -f environment.yml -n fev
+conda activate fev
+```
+
+Option 2: Install the Python dependencies
 
 ```bash
 conda create -n fev python=3.10 -y
