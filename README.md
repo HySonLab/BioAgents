@@ -56,6 +56,7 @@ Human verification and final FEV coding
 ## Quick start
 
 Python 3.10 or later is recommended.
+
 Option 1: Create the complete Conda environment
 
 ```bash
