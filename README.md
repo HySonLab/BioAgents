@@ -221,5 +221,3 @@ Use the PRISMA scripts to prepare and render the literature-selection flow diagr
 python visualization/build_PRISMA.py
 python visualization/visualization_PRISMA.py
 ```
-
-Generated outputs should be refreshed whenever finalized record-level coding changes.
