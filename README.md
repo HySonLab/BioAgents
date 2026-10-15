@@ -14,20 +14,7 @@ This repository provides the reproducible literature-retrieval and candidate-scr
 The pipeline searches **PubMed**, **Europe PMC**, and **arXiv**; applies explicit and implicit agent-retrieval strategies; verifies biological-domain evidence; preserves retrieval provenance; standardizes records from different sources; filters ineligible entries; deduplicates publications; assigns each candidate a primary domain and preliminary record type; and exports review-ready files for human verification.
 
 
-## Contents
-
-- [Workflow overview](#workflow-overview)
-- [Repository structure](#repository-structure)
-- [Requirements](#requirements)
-- [Configuration](#configuration)
-- [Stage 1: Retrieve records](#stage-1-retrieve-records)
-- [Stage 2: Process retrieved records](#stage-2-process-retrieved-records)
-- [Output files](#output-files)
-- [Human verification](#human-verification)
-- [Citation](#citation)
-
-## Workflow overview
-
+## Workflow
 <p align="center">
   <img
     src="assets/PRISMA.png"
@@ -38,134 +25,100 @@ Overview of the literature retrieval, filtering, deduplication, domain assignmen
 </p>
 
 
+```text
+config/search_config.json
+        |
+        v
+run_all_searches.py
+        |
+        +--> arXiv
+        +--> Europe PMC
+        +--> PubMed
+        |
+        v
+data_raw/
+        |
+        v
+run_filter.py
+        |
+        +--> combine
+        +--> filter
+        +--> deduplicate
+        +--> assign domains and export
+        |
+        v
+data/04_candidates_sorted_by_domain.csv
+        |
+        v
+Human verification and final FEV coding
+```
+
+## Quick start
+
+Python 3.10 or later is recommended.
+
+```bash
+conda create -n fev python=3.10 -y
+conda activate fev
+python -m pip install -r requirements.txt
+```
+
+Review the search settings in:
 
 ```text
 config/search_config.json
-          |
-          v
-run_all_searches.py
-          |
-          +--> crawl_data/search_arxiv.py
-          +--> crawl_data/search_europe_pmc.py
-          +--> crawl_data/search_pubmed.py
-          |
-          v
-data_raw/{arxiv,europe_pmc,pubmed}/
-          |
-          v
-run_filter.py
-          |
-          +--> filter/01_combine.py
-          +--> filter/02_filter.py
-          +--> filter/03_deduplicate.py
-          +--> filter/04_assign_sort_export.py
-          |
-          v
-data/04_candidates_sorted_by_domain.csv
-          |
-          v
-Human verification and final evidence-map coding
 ```
 
-The two main entry points are:
+Then run:
 
 ```bash
 python run_all_searches.py
 python run_filter.py
 ```
 
+The manuscript search interval is **2022-01-01 through 2026-09-01**.
+
+Optional environment variables:
+
+```bash
+export NCBI_API_KEY="your-api-key"
+export FEV_PROJECT_ROOT="/absolute/path/to/BioAgents"
+```
+
 ## Repository structure
 
 ```text
-.
-├── config/
-│   └── search_config.json
-├── crawl_data/
-│   ├── common.py
-│   ├── http_helpers.py
-│   ├── search_arxiv.py
-│   ├── search_europe_pmc.py
-│   └── search_pubmed.py
-├── data_raw/
-│   ├── arxiv/
-│   ├── europe_pmc/
-│   └── pubmed/
-├── filter/
-│   ├── 01_combine.py
-│   ├── 02_filter.py
-│   ├── 03_deduplicate.py
-│   ├── 04_assign_sort_export.py
-│   └── pipeline_common.py
-├── data/
-│   ├── by_domain/
-│   ├── by_data_type/
-│   └── HumanVerification/
-├── logs/
-├── outputs/
-│   └── reports/
-├── visualizing/
-├── run_all_searches.py
-├── run_filter.py
-├── requirements.txt
-└── README.md
+config/                  Search vocabulary and execution settings
+crawl_data/              Source-specific retrieval scripts
+ data_raw/               Raw retained and rejected retrieval records
+filter/                  Combination, filtering, deduplication, and export stages
+data/                    Screening outputs and human-review files
+logs/                    Timestamped retrieval logs
+outputs/reports/         Pipeline manifests and count summaries
+visualization/           Figure and statistical-analysis scripts
+run_all_searches.py      Retrieval entry point
+run_filter.py            Post-retrieval processing entry point
+requirements.txt         Python dependencies
 ```
 
-### `config/`
+## Retrieval
 
-Contains the search vocabulary and execution settings. The default configuration file is:
+The retrieval pipeline searches **arXiv**, **Europe PMC**, and **PubMed** using explicit agent terms and an implicit functional-agent route defined in `config/search_config.json`.
 
-```text
-config/search_config.json
-```
-
-At minimum, the configuration should define:
-
-- `explicit_agent_terms`
-- `implicit_agent_components`
-- `domain_groups`
-- `domain_order`
-
-The implicit-agent configuration may include:
-
-- `language_model_terms`
-- `tool_execution_terms`
-- `knowledge_grounding_terms`
-- `planning_control_terms`
-- `state_memory_terms`
-- `repair_verification_terms`
-
-The configuration may also specify:
-
-- `date_from` and `date_until`
-- `contact_email`
-- source-specific chunk sizes
-- pause and retry settings
-- resume behavior
-- `max_records_per_query`
-- an optional `ncbi_api_key`
-- full-agent verification terms
-
-The domains in `domain_order` should match those defined in `domain_groups`.
-
-### `crawl_data/`
-
-Contains source-specific retrieval scripts and shared search utilities.
-
-- `common.py` loads the configuration, generates queries, normalizes identifiers and text, applies local agent/domain validation, and writes standardized CSV outputs.
-- `http_helpers.py` sends HTTP requests with retries, exponential backoff, rate-limit handling, and recovery from temporary server errors.
-- `search_arxiv.py` retrieves and parses arXiv Atom records.
-- `search_europe_pmc.py` retrieves Europe PMC records using cursor-based pagination.
-- `search_pubmed.py` uses NCBI ESearch and EFetch to retrieve PubMed records.
-
-### `data_raw/`
-
-Contains source-level outputs generated by:
+Run all sources:
 
 ```bash
 python run_all_searches.py
 ```
 
-Outputs are organized by source:
+Run selected sources:
+
+```bash
+python run_all_searches.py --sources pubmed
+python run_all_searches.py --sources europe_pmc arxiv
+```
+
+Source outputs are written to:
 
 ```text
 data_raw/arxiv/
@@ -173,550 +126,58 @@ data_raw/europe_pmc/
 data_raw/pubmed/
 ```
 
-Each directory contains retained records and, where available, rejected records for each biological domain. PubMed and arXiv also preserve completed query chunks to support safe resume.
+Do not manually edit `data_raw/`; it forms the retrieval audit trail. Review `logs/` for failed requests, rate-limit waits, warnings, or incomplete searches before filtering.
 
-Do not manually edit files in `data_raw/`. They form the retrieval audit trail.
+## Screening pipeline
 
-### `filter/`
-
-Contains the four ordered processing stages called by `run_filter.py`:
+`run_filter.py` executes four ordered stages:
 
 1. combine source files;
-2. apply the post-combination eligibility gate;
-3. deduplicate publications;
-4. assign domains and preliminary data types, sort candidates, and export review files.
-
-### `data/`
-
-Contains intermediate and final machine-generated screening outputs.
-
-### `data/HumanVerification/`
-
-Contains files used or produced during manual eligibility review, including the automated candidate set, manually identified records, consolidated system records, benchmark records, and review rationales.
-
-### `logs/`
-
-Contains timestamped retrieval logs for PubMed, Europe PMC, and arXiv.
-
-Search logs are written to `logs/` with timestamps, for example:
-
-```text
-search_arxiv_YYYYMMDD_HHMMSS.log
-search_europe_pmc_YYYYMMDD_HHMMSS.log
-search_pubmed_YYYYMMDD_HHMMSS.log
-```
-
-Review these logs for failed API calls, rate-limit waits, incomplete domains, warnings, and source failures before running the filtering stage.
-### `outputs/reports/`
-
-Contains pipeline manifests and count summaries, including the input-file manifest and domain-by-data-type counts.
-
-### `visualizing/`
-
-Contains scripts used to generate manuscript figures and statistical summaries from finalized, adjudicated coding data.
-
-## Requirements
-
-Python 3.10 or later is recommended.
-
-Create and activate a Conda environment:
-
-```bash
-conda create -n fev python=3.10 -y
-conda activate fev
-```
-
-Install the required Python packages:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-If an `environment.yml` file is available, the environment can instead be created with:
-
-```bash
-conda env create -f environment.yml
-conda activate <environment-name>
-```
-
-An optional NCBI API key may be provided through the environment:
-
-```bash
-export NCBI_API_KEY="your-api-key"
-```
-
-The crawler project root may be overridden with:
-
-```bash
-export FEV_PROJECT_ROOT="/absolute/path/to/BioAgents"
-```
-
-> **Path note:** If `run_filter.py` contains a hard-coded project root such as `/home/phpham/Work/BioAgents`, update it for the current machine or revise the script to derive the repository root from `Path(__file__).resolve().parent`.
-
-## Configuration
-
-Before running the searches, review:
-
-```text
-config/search_config.json
-```
-
-Confirm the following settings:
-
-- publication-date interval;
-- contact email for API requests;
-- explicit agent terms;
-- implicit functional-agent terms;
-- domain terms and domain order;
-- source-specific record limits;
-- pause and retry settings;
-- resume behavior.
-
-The search interval used for the manuscript is:
-
-```text
-2022-01-01 through 2026-09-01
-```
-
-### Explicit retrieval route
-
-The explicit route follows the general logic:
-
-```text
-explicit agent terms AND biological-domain terms
-```
-
-The specific terms are defined in `explicit_agent_terms` and `domain_groups`.
-
-### Implicit functional-agent route
-
-The implicit route aims to retrieve systems that may not explicitly use the word `agent`. A candidate must contain:
-
-1. at least one language-model term;
-2. at least one tool-execution term;
-3. at least one supporting functional group;
-4. the configured minimum number of implicit component groups;
-5. evidence for the current biological domain.
-
-By default, language-model and tool-execution evidence are required, together with at least three implicit component groups in total.
-
-### Local validation
-
-Retrieved metadata are screened using the title, abstract, and keywords. A record is retained during retrieval when it satisfies:
-
-```text
-(explicit agent evidence OR sufficient implicit functional-agent evidence)
-AND
-query-domain evidence
-```
-
-Possible retrieval routes include:
-
-```text
-EXPLICIT_AND_IMPLICIT_AGENT_DOMAIN
-EXPLICIT_AGENT_DOMAIN
-IMPLICIT_FUNCTIONAL_AGENT_DOMAIN
-NO_QUERY_DOMAIN_EVIDENCE
-INSUFFICIENT_AGENT_EVIDENCE
-EXCLUDE_AT_RETRIEVAL
-```
-
-Retained records receive:
-
-```text
-retrieval_status = AGENT_DOMAIN_CANDIDATE
-```
-
-Rejected records receive:
-
-```text
-retrieval_status = EXCLUDE_AT_RETRIEVAL
-```
-
-## Stage 1: Retrieve records
-
-### Retrieve from all sources
-
-```bash
-python run_all_searches.py
-```
-
-By default, the runner executes the source scripts in this order:
-
-1. arXiv;
-2. Europe PMC;
-3. PubMed.
-
-If one source fails, the runner records the failure and continues to the remaining sources. The command returns a nonzero exit status if any source fails.
-
-### Retrieve from selected sources
-
-Run only PubMed:
-
-```bash
-python run_all_searches.py --sources pubmed
-```
-
-Run Europe PMC and arXiv:
-
-```bash
-python run_all_searches.py --sources europe_pmc arxiv
-```
-
-Valid source names are:
-
-```text
-arxiv
-europe_pmc
-pubmed
-```
-
-### Use a different configuration file
-
-```bash
-python run_all_searches.py --config config/search_config.json
-```
-
-### arXiv retrieval
-
-The arXiv collector:
-
-- searches title and abstract fields;
-- generates explicit and implicit queries from configured term chunks;
-- downloads Atom pages in batches;
-- sorts records by submission date in descending order;
-- applies the complete `date_from` and `date_until` interval;
-- stores `published_date` as well as publication year;
-- deduplicates by normalized arXiv identifier, with normalized title as a fallback;
-- preserves retained and rejected chunk files;
-- revalidates completed chunks using the current code and configuration;
-- uses a SHA-256 configuration fingerprint to determine whether a completed domain output remains current.
-
-Final outputs:
-
-```text
-data_raw/arxiv/<domain>.csv
-data_raw/arxiv/<domain>_rejected.csv
-```
-
-Chunk files:
-
-```text
-data_raw/arxiv/chunks/<domain>/
-```
-
-### Europe PMC retrieval
-
-The Europe PMC collector:
-
-- uses `TITLE_ABS` search blocks;
-- combines explicit or implicit agent logic with domain terms;
-- applies the publication interval using `FIRST_PDATE`;
-- requests core metadata in JSON;
-- uses cursor-based pagination;
-- disables synonym expansion;
-- limits each domain query using `max_records_per_query`;
-- applies the same local agent/domain validation used for the other sources.
-
-Final outputs:
-
-```text
-data_raw/europe_pmc/<domain>.csv
-data_raw/europe_pmc/<domain>_rejected.csv
-```
-
-### PubMed retrieval
-
-The PubMed collector:
-
-- generates explicit and implicit `Title/Abstract` queries;
-- uses NCBI ESearch with `usehistory=y`;
-- submits ESearch by POST to avoid URL-length limits;
-- applies publication dates through `mindate`, `maxdate`, and `datetype=pdat`;
-- retrieves XML metadata in batches through EFetch;
-- extracts PMID, PMCID, DOI, title, abstract, authors, keywords, publication type, venue, and year;
-- deduplicates primarily by PMID, followed by DOI and normalized title;
-- preserves completed chunks for resume;
-- revalidates and deduplicates domain records before writing final outputs.
-
-Final outputs:
-
-```text
-data_raw/pubmed/<domain>.csv
-data_raw/pubmed/<domain>_rejected.csv
-```
-
-Chunk files:
-
-```text
-data_raw/pubmed/chunks/<domain>/
-```
-
-## Stage 2: Process retrieved records
-
-Run the complete post-retrieval pipeline:
+2. apply the post-retrieval eligibility gate;
+3. deduplicate by DOI, PMID, arXiv identifier, and normalized title;
+4. assign domains, classify candidate type, sort records, and export review files.
 
 ```bash
 python run_filter.py
 ```
 
-Optional arguments:
-
-```bash
-python run_filter.py \
-  --config config/search_config.json \
-  --input-root data_raw/
-```
-
-The script runs four stages sequentially and stops if any stage fails.
-
-### Stage 2.1: Combine source files
-
-Script:
-
-```text
-filter/01_combine.py
-```
-
-This stage recursively discovers CSV files under the input root. It excludes:
-
-- files inside a `chunks` directory;
-- filenames containing `rejected`;
-- filenames containing `audit`;
-- filenames containing `checkpoint`.
-
-Readable, nonempty CSV files are converted to a common schema and combined. The original source path is retained in `retrieval_file`.
-
-Outputs:
-
-```text
-data/01_combined_source_rows.csv
-outputs/reports/input_file_manifest.csv
-```
-
-### Stage 2.2: Apply the post-combination gate
-
-Script:
-
-```text
-filter/02_filter.py
-```
-
-A row is retained only when all of the following conditions are met:
-
-1. `search_logic_keep` evaluates to true;
-2. `retrieval_status` is not `EXCLUDE_AT_RETRIEVAL`;
-3. `explicit_agent_hits` is nonempty;
-4. either `query_domain_hits` or `matched_domains` is nonempty.
-
-Outputs:
-
-```text
-data/02_filtered_candidate_rows.csv
-data/02_postcombine_rejected_rows.csv
-```
-
-Rejected rows receive:
-
-```text
-postcombine_reject_reason = FAILED_RETRIEVAL_GATE_OR_MISSING_EVIDENCE
-```
-
-> **Implementation note:** The crawler supports an implicit functional-agent route, but the current post-combination gate requires `explicit_agent_hits` to be nonempty. Consequently, records retained solely through implicit evidence may be excluded at this stage. Confirm that this behavior is intentional before generating the final review set.
-
-### Stage 2.3: Deduplicate publications
-
-Script:
-
-```text
-filter/03_deduplicate.py
-```
-
-The first available identifier is used as the primary deduplication key, in this order:
-
-1. normalized DOI;
-2. PMID;
-3. normalized arXiv identifier;
-4. normalized title.
-
-Within each duplicate group, the canonical record is selected using:
-
-1. source priority;
-2. presence of DOI;
-3. presence of PMID;
-4. abstract length;
-5. author-string length.
-
-The current source priority is:
-
-```text
-PubMed > Europe PMC > bioRxiv > Crossref > arXiv
-```
-
-A second merge is then performed using normalized titles. During consolidation, the pipeline preserves or aggregates:
-
-- the longest title, abstract, author string, and keyword field;
-- DOI, PMID, PMCID, arXiv ID, URL, year, venue, and publication type;
-- all retrieval sources and source files;
-- all retrieved domains;
-- all DOI, PMID, and arXiv identifiers;
-- the number of merged source rows.
-
-Output:
-
-```text
-data/03_deduplicated_candidates.csv
-```
-
-### Stage 2.4: Assign domains, classify records, and export outputs
-
-Script:
-
-```text
-filter/04_assign_sort_export.py
-```
-
-#### Domain assignment
-
-Domain evidence is calculated from configured terms detected in the title, keywords, and abstract. Scores are weighted as follows:
-
-```text
-title hit:    6 x number of words in the matched term
-keyword hit:  3 x number of words in the matched term
-abstract hit: 1 x number of words in the matched term
-```
-
-The highest-scoring domain becomes `primary_domain`. Ties are resolved using `domain_order`. All matched domains and supporting scores are retained in:
-
-```text
-all_matched_domains
-domain_scores_json
-```
-
-If no configured domain term is detected, the record is assigned to `unclassified`.
-
-#### Preliminary data-type classification
-
-The classifier searches the normalized title, abstract, and publication type in the following priority order:
-
-1. `benchmark_evaluation_resource`
-2. `review_perspective`
-3. `model_or_component`
-4. `agent_system_candidate`
-
-This classification is preliminary and must be verified manually.
-
-#### Sorting and candidate identifiers
-
-Candidates are sorted by:
-
-1. configured domain order;
-2. preliminary data-type priority;
-3. publication year in descending order;
-4. normalized title.
-
-Each publication receives a sequential candidate identifier:
-
-```text
-CAND-000001
-CAND-000002
-...
-```
-
-Outputs:
+Primary output:
 
 ```text
 data/04_candidates_sorted_by_domain.csv
-data/by_domain/<domain>.csv
-data/by_data_type/<data_type>.csv
+```
+
+Supporting reports:
+
+```text
+outputs/reports/input_file_manifest.csv
 outputs/reports/domain_data_type_counts.csv
 ```
 
-## Output files
-
-### Retrieval outputs
-
-```text
-data_raw/arxiv/<domain>.csv
-data_raw/arxiv/<domain>_rejected.csv
-data_raw/europe_pmc/<domain>.csv
-data_raw/europe_pmc/<domain>_rejected.csv
-data_raw/pubmed/<domain>.csv
-data_raw/pubmed/<domain>_rejected.csv
-```
-
-### Filtering outputs
-
-#### `data/01_combined_source_rows.csv`
-
-Contains canonicalized source-level rows before the post-combination gate.
-
-#### `data/02_filtered_candidate_rows.csv`
-
-Contains source-level rows that pass the post-combination gate.
-
-#### `data/02_postcombine_rejected_rows.csv`
-
-Contains rows excluded by the post-combination gate, together with a machine-generated rejection reason.
-
-#### `data/03_deduplicated_candidates.csv`
-
-Contains publication-level records after identifier-based and title-based deduplication.
-
-#### `data/04_candidates_sorted_by_domain.csv`
-
-The principal automated-screening output for human review. Each row represents one deduplicated candidate publication and includes its candidate ID, assigned primary domain, all matched domains, domain evidence, and preliminary data type.
-
-### Reports
-
-#### `outputs/reports/input_file_manifest.csv`
-
-Lists every source CSV loaded by the filtering pipeline, together with its row count and detected source values.
-
-#### `outputs/reports/domain_data_type_counts.csv`
-
-Reports candidate counts by primary domain and preliminary data type.
+> **Important:** The crawler supports implicit functional-agent retrieval, but the current post-combination gate requires nonempty `explicit_agent_hits`. Records retained only through implicit evidence may therefore be excluded. Confirm that this behavior is intended before generating the final review set.
 
 ## Human verification
 
-The following files support manual review:
-
-### `data/HumanVerification/HumanVerification.csv`
-
-A review copy of the automated candidate set. Each candidate should receive a documented inclusion or exclusion decision.
-
-### `data/HumanVerification/ManuallyIdentified.csv`
-
-Contains additional publications identified through targeted searches, citation tracing, system-name searches, companion publications, or updated versions. These records should be evaluated using the same eligibility criteria applied to database-derived candidates.
-
-### `data/HumanVerification/AgenticSystem.csv`
-
-Contains publications classified after human review as agentic or agent-adjacent systems.
-
-### `data/HumanVerification/Benchmark.csv`
-
-Contains publications classified after human review as benchmark or evaluation resources.
-
-The human-verification audit trail should record:
-
-- inclusion or exclusion decision;
-- exclusion reason;
-- full-agentic or agent-adjacent status, where applicable;
-- system, benchmark, or overlapping analytic category;
-- primary biological domain;
-- publication identifiers;
-- supporting notes and source evidence;
-- reviewer and adjudication information, where applicable.
-
-
-
-
-
-
-<!-- ## Citation
-
-If you use this repository, please cite the associated manuscript:
+Manual review files are stored in `data/HumanVerification/`:
 
 ```text
-Pham P, Hy TS. Evaluating Agentic Bioinformatics through Functionality, Evidence, and Validation.
-``` -->
+HumanVerification.csv    Automated candidates for eligibility review
+ManuallyIdentified.csv   Records added through targeted searches or citation tracing
+AgenticSystem.csv        Final agentic and agent-adjacent system-use-case coding
+Benchmark.csv            Final benchmark and evaluation-resource coding
+```
+
+The audit trail should retain eligibility decisions, exclusion reasons, agentic status, analytic category, biological domain, identifiers, supporting evidence, and adjudication information where applicable.
+
+## Visualization and analysis
+
+Generate manuscript figures and association analyses from finalized coding data:
+
+```bash
+python visualization/visualization.py
+python visualization/association_analysis.py \
+  --input data/HumanVerification/AgenticSystem.csv \
+  --output-dir visualization/association_outputs \
+  --dpi 300 \
+  --exclude-duplicates
+```
