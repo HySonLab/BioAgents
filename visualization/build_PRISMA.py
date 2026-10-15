@@ -14,14 +14,14 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 ROOT = Path("/home/phpham/Work/BioAgents")
 DATA = ROOT / "data"
-OUTPUTS = ROOT / "outputs"
+OUTPUTS = ROOT / "visualization"
 
 DEFAULT_COMBINED = DATA / "01_combined_source_rows.csv"
 DEFAULT_REJECTED = DATA / "02_postcombine_rejected_rows.csv"
 DEFAULT_FILTERED = DATA / "02_filtered_candidate_rows.csv"
 DEFAULT_DEDUPLICATED = DATA / "03_deduplicated_candidates.csv"
-DEFAULT_OUTPUT = OUTPUTS / "figures" / "literature_search_flow"
-DEFAULT_COUNTS = OUTPUTS / "reports" / "literature_search_counts.json"
+DEFAULT_OUTPUT = OUTPUTS / "PRISMA" / "literature_search_flow"
+DEFAULT_COUNTS = OUTPUTS / "PRISMA" / "literature_search_counts.json"
 
 SOURCE_ORDER = ("PubMed", "Europe PMC", "arXiv")
 

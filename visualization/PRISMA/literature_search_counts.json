@@ -1,0 +1,15 @@
+{
+  "source_rows": {
+    "PubMed": 729,
+    "Europe PMC": 1102,
+    "arXiv": 670
+  },
+  "retrieved": 2501,
+  "excluded": 54,
+  "eligible": 2447,
+  "identifier_matches": 1011,
+  "identifier_groups": 1436,
+  "title_matches": 84,
+  "screening_set": 1352,
+  "total_consolidated": 1095
+}
