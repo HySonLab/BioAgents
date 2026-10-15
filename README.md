@@ -156,22 +156,46 @@ outputs/reports/domain_data_type_counts.csv
 
 > **Important:** The crawler supports implicit functional-agent retrieval, but the current post-combination gate requires nonempty `explicit_agent_hits`. Records retained only through implicit evidence may therefore be excluded. Confirm that this behavior is intended before generating the final review set.
 
-## Human verification
+## Human verification and independent coding
 
-Manual review files are stored in `data/HumanVerification/`:
+The `data/HumanVerification/` directory contains the manually reviewed datasets used to produce the final evidence map:
 
 ```text
-HumanVerification.csv    Automated candidates for eligibility review
-ManuallyIdentified.csv   Records added through targeted searches or citation tracing
-AgenticSystem.csv        Final agentic and agent-adjacent system-use-case coding
-Benchmark.csv            Final benchmark and evaluation-resource coding
+data/HumanVerification/
+├── HumanVerification.csv    Eligibility review of automated candidates
+├── ManuallyIdentified.csv   Records added through targeted searches or citation tracing
+├── AgenticSystem.csv        Final system-use-case FEV coding
+└── Benchmark.csv            Final benchmark and evaluation-resource coding
 ```
 
-The audit trail should retain eligibility decisions, exclusion reasons, agentic status, analytic category, biological domain, identifiers, supporting evidence, and adjudication information where applicable.
+These files preserve the reviewed publication identifiers, eligibility decisions, exclusion reasons, biological domains, agentic status, FEV assignments, supporting evidence, and adjudication notes used in the manuscript. `AgenticSystem.csv` is the primary source for record-level analyses and figures.
+
+The `data/independent_coding/` directory contains the materials used for the independent coding-reliability exercise:
+
+```text
+data/independent_coding/
+├── FEV_Independent_Coding_Form.pdf    Coding instructions and reviewer form
+├── IndependentCoding.csv              Independent pre-adjudication assignments
+└── MissMatch.csv                      Disagreements identified for adjudication
+```
+
+`IndependentCoding.csv` preserves the reviewers' original coding decisions, while `MissMatch.csv` records assignments that differed and required review. These files are kept separate from the finalized consensus data so that pre-adjudication agreement can be audited.
 
 ## Visualization and analysis
 
-Generate manuscript figures and association analyses from finalized coding data:
+The `visualization/` directory contains the scripts and generated outputs used for manuscript figures and quantitative analyses:
+
+```text
+visualization/
+├── association_analysis.py      Association and publication-year analyses
+├── visualization.py             Main descriptive FEV figures
+├── build_PRISMA.py              Prepares PRISMA flow inputs
+├── visualization_PRISMA.py      Renders the PRISMA-style flow diagram
+├── association_outputs/         Tables, summaries, and outputs from association analyses
+└── statistical_figures/         Exported statistical and manuscript-ready figures
+```
+
+Generate figures and association analyses from the finalized coding data:
 
 ```bash
 python visualization/visualization.py
@@ -181,3 +205,12 @@ python visualization/association_analysis.py \
   --dpi 300 \
   --exclude-duplicates
 ```
+
+Use the PRISMA scripts to prepare and render the literature-selection flow diagram:
+
+```bash
+python visualization/build_PRISMA.py
+python visualization/visualization_PRISMA.py
+```
+
+Generated outputs should be refreshed whenever finalized record-level coding changes.
